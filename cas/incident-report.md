@@ -177,11 +177,11 @@ Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.
 
 **For Incident Reports:** 
 - The "Summary" field in Bugzilla (i.e., "Subject line") MUST begin with the CA Owner’s name, followed by a colon, and a brief title that highlights the type of incident being reported (e.g., "EXAMPLE CA OWNER: Incorrect Subject RDN Encoding"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
-- The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding markdown template, as explained [below](#report-templates)). 
+- The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)). 
 
 **For Audit Finding Reports:**
 - The Summary field in Bugzilla MUST be set to CA Owner’s name, followed by a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "EXAMPLE CA OWNER: Findings in 2024 Audit"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
-- The "Description" field MUST contain an Audit Finding Report (copied and pasted from the corresponding markdown template, as explained [below](#report-templates)). 
+- The "Description" field MUST contain an Audit Finding Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)). 
 
 
 #### How are reports scoped?
@@ -203,7 +203,7 @@ Use one of the templates below, depending on the type of report being disclosed:
 - [Full Incident Report](#full-incident-report) (for CA Owners submitting Full Incident Reports)
 - [Audit Finding Report](#audit-finding-report) (for CA Owners submitting Audit Finding Reports)
 
-Report content MUST be provided in Markdown (i.e., not in the form of an attachment) and SHOULD utilize Markdown's [formatting features](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (headers, lists, emphasis, etc.) to ensure clarity and readability.
+Report content MUST be provided in Markdown (i.e., not in the form of an attachment) and SHOULD utilize Markdown's [formatting features](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (headers, lists, emphasis, etc.) to ensure clarity and readability. Individuals submitting reports SHOULD use Bugzilla's "preview" feature to confirm rendering appears as expected before posting.
 
 Learn more about expected report content and a description of the fields included in the reporting templates [here](#report-field-definitions-and-expectations).
 
