@@ -180,7 +180,7 @@ Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.
 - The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding markdown template, as explained [below](#report-templates)). 
 
 **For Audit Finding Reports:**
-- The Summary field in Bugzilla MUST be set to CA Owner’s name, followed by a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "CA ABC: Findings in 2024 Audit"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
+- The Summary field in Bugzilla MUST be set to CA Owner’s name, followed by a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "EXAMPLE CA OWNER: Findings in 2024 Audit"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
 - The "Description" field MUST contain an Audit Finding Report (copied and pasted from the corresponding markdown template, as explained [below](#report-templates)). 
 
 
