@@ -163,7 +163,7 @@ To ensure productive dialogue, please keep all comments constructive, relevant t
 #### What Bugzilla account can I use?
 
 **For individuals affiliated with a Publicly-Trusted CA Owner:**
-- **To better encourage blamelessness**, when posting incident reports or responding to comments on reports for which they are affiliated, participants are encouraged to respond from a Bugzilla account associated with one of the CA e-mail aliases disclosed to the CCADB, rather than an individual contributor’s account.
+- **To better encourage blamelessness**, when posting incident reports or responding to comments on reports for which they are affiliated, participants MAY respond from a Bugzilla account associated with one of the CA e-mail aliases disclosed to the CCADB, rather than an individual contributor’s account.
 - **To better respect a desire for individual privacy and potential risk of retaliation**, individuals participating in the reporting process are welcome to participate **responsibly** from an account that does not identify the individual posting or their organizational affiliation.
 
 **For everyone else:** Create a new Bugzilla account following [these](https://bugzilla.mozilla.org/createaccount.cgi) instructions. Remember, please keep all comments constructive, relevant to the corresponding report, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c).
@@ -191,7 +191,7 @@ Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.
 - in the process of researching one incident, another incident with a distinct root cause and/or remediation is discovered.
 - after an incident is marked resolved in Bugzilla, the incident reoccurs.
 
-**For Audit Finding Reports:** There MUST be a single Audit Finding Report that covers all findings discovered by the audit.
+**For Audit Finding Reports:** A single Audit Finding Report MUST be submitted that includes all audit findings not previously disclosed to Bugzilla as part of an incident report. The inclusion of "Other Matters" in an audit letter does not, on its own, require a separate Audit Finding Report.
 
 All reports MUST be free-standing (i.e., not rely upon the contents of other reports). Reports MAY repeat things previously stated in discussions or Bugzilla comments, in which case the report SHOULD state a summary of previous findings. The existence of data in discussions or Bugzilla comments does not excuse a CA Owner from the task of compiling a report that aligns with the guidance on this page.
 
