@@ -209,14 +209,12 @@ Learn more about expected report content and a description of the fields include
 
 #### When are reports expected?
 
-**For Incident Reports:** Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure"), the CA Owner MUST 
-
-Either:
+**For Incident Reports:** Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure"), the CA Owner MUST either:
 - disclose a Preliminary or Full Incident Report; or
 - respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
 
-And:
-- accurately disclose the impact of the incident (e.g., the corpus of then-known mis-issued certificates).
+In its first Report (i.e., Preliminary or Full Incident Report) or reply to a submission from a third party reporter, the CA Owner MUST:
+- accurately disclose the impact of the incident (e.g., the corpus of then-known mis-issued certificates); and
 - describe whether the incident should be considered contained (e.g., because certificate issuance was stopped) or ongoing.
 
 If the described impact of the incident is later found to be inaccurate, the CA Owner MUST clearly communicate a correction, identifying when each following change was detected, the circumstances that led to the inaccuracy, and how this will be avoided in the future.
