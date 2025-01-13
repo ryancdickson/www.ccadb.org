@@ -212,8 +212,8 @@ Learn more about expected report content and a description of the fields include
 **For Incident Reports:** Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure"), the CA Owner MUST 
 
 Either:
-1) disclose a Preliminary or Full Incident Report; or
-2) respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
+- disclose a Preliminary or Full Incident Report; or
+- respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
 
 And:
 - accurately disclose the impact of the incident (e.g., the corpus of then-known mis-issued certificates).
