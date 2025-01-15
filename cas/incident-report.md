@@ -1,4 +1,4 @@
-# Incident and Audit Finding Reporting Guidelines
+# Incident Reporting Guidelines
 
 ## Change History
 
@@ -10,9 +10,9 @@
 
 ## Incident Reporting
 
-Systems, processes, and people aren't perfect. Omissions and deviations from expected outcomes can sometimes happen. However, when omissions or deviations are discovered, the underlying issues (i.e., root causes) need to be identified and remediated to discourage future recurrence. Formally documenting these cases, in the form of an Incident Report or Audit Finding Report, promotes a thorough understanding of contributing factors and facilitates clear communication of remediation plans, while also fostering a culture of continuous improvement within the Web PKI ecosystem.
+Systems, processes, and people aren't perfect. Omissions and deviations from expected outcomes can sometimes happen. However, when omissions or deviations are discovered, the underlying issues (i.e., root causes) need to be identified and remediated to discourage future recurrence. Formally documenting these cases, in the form of an Incident Report, promotes a thorough understanding of contributing factors and facilitates clear communication of remediation plans, while also fostering a culture of continuous improvement within the Web PKI ecosystem.
 
-This page describes the CCADB Incident and Audit Finding Reporting Framework and corresponding guidelines. For questions, contact support [at] ccadb [dot] org.
+This page describes the CCADB Incident Reporting Framework and corresponding guidelines. For questions, contact support [at] ccadb [dot] org.
 
 **Note:** The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
@@ -20,14 +20,12 @@ This page describes the CCADB Incident and Audit Finding Reporting Framework and
 
 [**Useful background**](#useful-background)
 - [What is considered an incident?](#what-is-considered-an-incident)
-- [What is considered an audit finding?](#what-is-considered-an-audit-finding)
 - [Why is public reporting important?](#why-is-public-reporting-important)
 - [What are the key characteristics of these reports?](#what-are-the-key-characteristics-of-these-reports)
 - [What does root cause analysis consider?](#what-does-root-cause-analysis-consider)
 
 [**Community participation in the reporting process**](#community-participation-in-the-reporting-process)
 - [Who can submit an Incident Report?](#who-can-submit-an-incident-report)
-- [Who can submit an Audit Finding Report?](#who-can-submit-an-audit-finding-report)
 - [Are there other ways to become involved in the reporting process?](#are-there-other-ways-to-become-involved-in-the-reporting-process)
 - [What Bugzilla account can I use?](#what-bugzilla-account-can-i-use)
 
@@ -42,12 +40,10 @@ This page describes the CCADB Incident and Audit Finding Reporting Framework and
 [**Report templates**](#report-templates)
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
-- [Audit Finding Report Template](#audit-finding-report)
 - [Report Closure Template](#closure-report)
 
 [**Report field definitions and expectations**](#report-field-definitions-and-expectations)
 - [Incident Reports](#incident-reports)
-- [Audit Finding Reports](#audit-finding-reports)
 
 [**Illustrative practices**](#illustrative-practices)
 - [Are there examples of "good" practices?](#are-there-examples-of-good-practices)
@@ -84,7 +80,7 @@ These items are commonly, but not exclusively, presented as either:
 
 #### Why is public reporting important?
 
-Incident and Audit Finding Reports provide lessons learned and transparency about the steps the CA Owner takes to address the immediate issue and prevent future issues. If the underlying problem goes unfixed, then other issues that share the same root cause will subsequently surface. 
+Incident Reports provide lessons learned and transparency about the steps the CA Owner takes to address the immediate issue and prevent future issues. If the underlying problem goes unfixed, then other issues that share the same root cause will subsequently surface. 
 
 The public reporting process is important because it promotes continuous improvement, information sharing, and highlights opportunities to define and adopt improved practices, policies, and controls. Further, public reporting helps convey the implications and impact of an event so that affected stakeholders have an opportunity to assess risk and determine if it warrants further action. Together, these activities help build a more secure web. 
 
@@ -138,16 +134,10 @@ Effective Root Cause Analysis (RCA) minimally considers the following points:
 Anyone should feel encouraged to submit an Incident Report that’s founded upon credible and well-substantiated evidence.
 
 Some Root Store Operator policies require CA Owners to submit an Incident Report as described on this page after self-discovering or being made aware of an Incident (e.g., receiving and corroborating an issue described in a [Certificate Problem Report](https://cabforum.org/working-groups/server/baseline-requirements/requirements/#161-definitions)).
-
-#### Who can submit an Audit Finding Report?
-
-Audit Finding Reports are expected to be submitted by either:
-- the CA Owner organization whose corresponding root CA certificate is included in the applicable Root Store(s); or
-- the CA Owner organization whose corresponding subordinate CA certificate is subject of the report (e.g., issued the problematic certificate(s)).
   
 #### Are there other ways to become involved in the reporting process?
 
-Absolutely! There are many ways to participate in the Incident and Audit Finding reporting processes beyond submitting new reports. Everyone is encouraged to actively contribute by commenting on existing reports and engaging in constructive discussions. This can include, but is not limited to:
+Absolutely! There are many ways to participate in the incident reporting processes beyond submitting new reports. Everyone is encouraged to actively contribute by commenting on existing reports and engaging in constructive discussions. This can include, but is not limited to:
 - providing additional information,
 - asking clarifying questions,
 - discussing technical aspects of the incident,
@@ -175,23 +165,15 @@ To ensure productive dialogue, please keep all comments constructive, relevant t
 
 Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.org/enter_bug.cgi?format=__default__&product=CA%20Program&component=CA%20Certificate%20Compliance&bug_type=task). 
 
-**For Incident Reports:** 
 - The "Summary" field in Bugzilla (i.e., "Subject line") MUST begin with the CA Owner’s name, followed by a colon, and a brief title that highlights the type of incident being reported (e.g., "EXAMPLE CA OWNER: Incorrect Subject RDN Encoding"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
 - The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)). 
 
-**For Audit Finding Reports:**
-- The Summary field in Bugzilla MUST be set to CA Owner’s name, followed by a colon, and "Findings in 20XX Audit", where XX is the year the audit period or point-in-time ended (e.g., "EXAMPLE CA OWNER: Findings in 2024 Audit"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
-- The "Description" field MUST contain an Audit Finding Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)). 
-
-
 #### How are reports scoped?
 
-**For Incident Reports:** There SHOULD be a single Incident Report for each distinct matter, and CA Owners MUST submit an additional, separate Incident Report when:
+There SHOULD be a single Incident Report for each distinct matter, and CA Owners MUST submit an additional, separate Incident Report when:
 - policy requires the revocation of one or more certificates by a certain deadline, such as those in BR Section 4.9, but that deadline will not be or has not been met by the CA Owner (i.e., a delayed revocation Incident Report).
 - in the process of researching one incident, another incident with a distinct root cause and/or remediation is discovered.
 - after an incident is marked resolved in Bugzilla, the incident reoccurs.
-
-**For Audit Finding Reports:** A single Audit Finding Report MUST be submitted that includes all audit findings not previously disclosed to Bugzilla as part of an incident report. The inclusion of "Other Matters" in an audit letter does not, on its own, require a separate Audit Finding Report.
 
 All reports MUST be free-standing (i.e., not rely upon the contents of other reports). Reports MAY repeat things previously stated in discussions or Bugzilla comments, in which case the report SHOULD state a summary of previous findings. The existence of data in discussions or Bugzilla comments does not excuse a CA Owner from the task of compiling a report that aligns with the guidance on this page.
 
@@ -201,7 +183,6 @@ Use one of the templates below, depending on the type of report being disclosed:
 
 - [Preliminary Incident Report](#preliminary-incident-report) (for third party reporters and CA Owners submitting Preliminary Incident Reports)
 - [Full Incident Report](#full-incident-report) (for CA Owners submitting Full Incident Reports)
-- [Audit Finding Report](#audit-finding-report) (for CA Owners submitting Audit Finding Reports)
 
 Report content MUST be provided in Markdown (i.e., not in the form of an attachment) and SHOULD utilize Markdown's [formatting features](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) (headers, lists, emphasis, etc.) to ensure clarity and readability. Individuals submitting reports SHOULD use Bugzilla's "preview" feature to confirm rendering appears as expected before posting.
 
@@ -209,7 +190,7 @@ Learn more about expected report content and a description of the fields include
 
 #### When are reports expected?
 
-**For Incident Reports:** Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure"), the CA Owner MUST either:
+Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure") or audit finding, the CA Owner MUST either:
 - disclose a Preliminary or Full Incident Report; or
 - respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
 
@@ -221,7 +202,6 @@ If the described impact of the incident is later found to be inaccurate, the CA 
 
 While Full Incident Reports SHOULD be posted as soon as possible, they MUST be posted within 14 days of the incident’s initial disclosure.
 
-**For Audit Finding Reports:** Prior to or within 7 calendar days of the corresponding audit report’s issuance date.
 
 #### When are reports updated?
 
@@ -250,10 +230,9 @@ CA Owners MUST use the template [below](#incident-closure-summary) to indicate r
 
 ### Report Templates
 
-The templates below describe the expected contents of an Incident or Audit Finding Report. When creating one of these reports, the latest version of this guidance MUST be relied upon.
+The templates below describe the expected contents of an Incident Report. When creating one of these reports, the latest version of this guidance MUST be relied upon.
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
-- [Audit Finding Report Template](#audit-finding-report)
 - [Report Closure Template](#closure-report)
 
 If submitted by the CA Owner corresponding with the report, all fields included in the relevant template MUST be completed. Fields that are not applicable MUST be included in the report and identified as 'N/A'.
@@ -336,38 +315,6 @@ Learn more about expected report content and a description of the fields include
 
 ```
 
-#### Audit Finding Report
-
-```markdown
-
-## Audit Finding Report
-
-### Summary
-
-- **CA Owner CCADB unique ID:**
-- **Audit report URL:**
-- **Audit type:**
-- **Audit firm:**
-- **Audit period:**
-- **Audit report date:**
-
-### Findings
-
-** Issue #: Issue title**
-- **Description:** 
-- **Issue onset:** 
-- **Issue detection:** 
-- **Issue resolution:** 
-- **How the issue avoided detection:**
-
-### Action Items
-
-| Action Item | Kind    | Corresponding Issue         | Evaluation Criteria | Due Date   | Status |
-| ----------- | ----    | --------------------------- | ------------------- | ---------- | -------|
-| Example     | Prevent | Root Cause # 1              | Criteria            | 2025-01-19 | Value  |
-
-```
-
 #### Closure Report
 
 ```markdown
@@ -386,7 +333,7 @@ All Action Items disclosed in this report have been completed as described, and 
 
 ### Report field definitions and expectations
 
-The following sections are intended to describe expected Incident Report and Audit Finding Report content. All fields are mandatory for the corresponding report type, except when described below.
+The following sections are intended to describe expected Incident Report content. All fields are mandatory for the corresponding report type, except when described below.
 
 If submitted by the CA Owner corresponding with the report, all fields included in the relevant template MUST be completed. Fields that are not applicable MUST be included in the report and identified as 'N/A'.
 
@@ -492,41 +439,6 @@ Expected Timeline elements:
 
 When the incident being reported involves an S/MIME certificate, if disclosure of personally identifiable information in the certificate MAY be contrary to applicable law, please provide at least the certificate serial number and SHA256 hash of the certificate.
 
-#### Audit Finding Reports 
-
-**Summary:** The Summary section contains background information to provide context for readers to understand the details in the rest of the report. 
-
-| Field                           | Description                              |  
-|---------------------------------|------------------------------------------| 
-| **CA Owner CCADB unique ID** | The CCADB unique ID value (begins with "A" followed by a six-digit number) corresponding to the CA Owner's "CA Owner/Certificate" record disclosed in the CCADB. |
-| **Audit report URL** | A publicly-accessible link to the corresponding audit letter. |
-| **Audit type** | Describe the audit scheme and criteria assessed by the audit. (e.g., "WebTrust Principles and Criteria for Certification Authorities – SSL Baseline – Version 2.8) |
-| **Audit firm** | The name of the organization that performed the audit. |
-| **Audit period** | The period of time covered by the audit. |
-| **Audit report date** | The audit report date. |
-
-**Findings:** The Findings section should contain a description of each finding. This provides context for the reader to understand the nature of the non-compliance identified by the Auditor. Each finding presented in the audit letter MUST be covered with the following information:
-
-| Field                           | Description                              |  
-|---------------------------------|------------------------------------------| 
-| **Description** | A detailed description of the specific issue. |
-| **Issue onset** | Date when the issue began. |
-| **Issue detection** | Date when the issue was detected or otherwise made known. |
-| **Issue resolution** | Actual or planned date when the issue will be considered resolved. |
-| **How the issue avoided detection** | A detailed description of how the issue was not detected earlier. |
-
-**Action Items:** The Action Items section must contain a list of remediation items that were or will be undertaken to ensure that similar issues do not reoccur in the future. Each finding MUST be mapped to at least one specific Action Item.
-
-| Field                           | Description                              |  
-|---------------------------------|------------------------------------------| 
-| **Action Item description** | A detailed description of the action to be taken. |
-| **Kind** | A classification of whether the action will help *Prevent* future incidents, *Mitigate* the impact of future incidents, or *Detect* future incidents. CA Owners are encouraged to propose action items in all three categories, with an emphasis on Prevent and Mitigate. |
-| **Corresponding issue(s)** | The specific issue that the Action intends to remediate. |
-| **Evaluation criteria** | Describe how the CA Owner will measure the effectiveness of the Action Item in addressing the Root Cause. Include how the public can also measure this impact, if applicable. CA Owners SHOULD prioritize objective and publicly measurable evidence (i.e., evidence that can be independently verified by the public, such as through Certificate Transparency log data, audit statements, CA policy documents, and public communications (e.g., website content, surveys, etc.)). While external metrics are preferred, these Guidelines recognize that some Action Items may have limited measurable outcomes. When objective metrics are not readily available, CA Owners SHOULD provide a qualitative assessment of the Action Item's effectiveness and explain how they will monitor its impact. Even after an Incident Report has been closed, CA Owners are strongly encouraged to provide periodic updates (e.g., 3, 6, and 12 months post-closure, or at other determined appropriate intervals) related to the ongoing efficacy of the Action Item, as measured against the evaluation criteria. This helps demonstrate a continued commitment to improvement and transparency.
-| **Due date** | A date by which the action item will be complete. |
-| **Status** | Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled". |
-
-
 ##### Incident Closure Summary
 
 The Incident Closure Summary allows a CA Owner to signal they believe an incident is ready for closure.
@@ -611,8 +523,6 @@ The Incident Closure Summary allows a CA Owner to signal they believe an inciden
 
 Here are some examples of good practice, where a CA Owner did most or all of the things recommended above:
 
-**Incident Reports**:
-
 - [Serving invalid or incomplete CRLs](https://bugzilla.mozilla.org/show_bug.cgi?id=1900129)
      - Clear Summary and Impact statements allow readers to quickly understand the scope of the incident
      - Detailed and thorough evaluation of existing safeguards that failed, allowing for an understanding of why the the incident was allowed to take place
@@ -629,11 +539,5 @@ Here are some examples of good practice, where a CA Owner did most or all of the
      - Clear identification of the contributing factors that contributed to the incident that notes how many of them avoided detection in the Root Cause Analysis.
      - Action Items that prevent, mitigate, and detect what didn’t go well.
      - Timely and detailed updates conveying Action Item status.
- 
-**Audit Finding Reports**:
-
-- [QuoVadis: Findings in 2024 ETSI Audit of QuoVadis Qualified Web ICA G2](https://bugzilla.mozilla.org/show_bug.cgi?id=1918467)
-     - Clear "Summary" statement and finding descriptions allow readers to quickly understand the scope of the incident.
-     - Detailed set of "Action Items" with accompanying background help the reader understand the steps taken to meaningfully reduce the liklihood of the issues repeating.
 
 Upon adoption of the updated report templates described on this page, examples of good practice will be updated.
