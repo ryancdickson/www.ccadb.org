@@ -20,6 +20,7 @@ This page describes the CCADB Incident Reporting Framework and corresponding gui
 
 [**Useful background**](#useful-background)
 - [What is considered an incident?](#what-is-considered-an-incident)
+- [What is considered an audit finding?](#what-is-considered-an-audit-finding)
 - [Why is public reporting important?](#why-is-public-reporting-important)
 - [What are the key characteristics of these reports?](#what-are-the-key-characteristics-of-these-reports)
 - [What does root cause analysis consider?](#what-does-root-cause-analysis-consider)
@@ -44,6 +45,7 @@ This page describes the CCADB Incident Reporting Framework and corresponding gui
 
 [**Report field definitions and expectations**](#report-field-definitions-and-expectations)
 - [Incident Reports](#incident-reports)
+- [Incident Closure Summary](#incident-closure-summary)
 
 [**Illustrative practices**](#illustrative-practices)
 - [Are there examples of "good" practices?](#are-there-examples-of-good-practices)
@@ -226,7 +228,7 @@ If (1) all Action Items are marked as complete and (2) there are no outstanding 
 - a summary of all ongoing commitments made in response to the incident, if any; and
 - an attestation that all Action Items have been completed.
 
-CA Owners MUST use the template [below](#incident-closure-summary) to indicate requested closure of an Incident or Audit Finding Report. Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly.
+CA Owners MUST use the template [below](#incident-closure-summary) to indicate requested closure of an Incident Report. Upon doing so, a final call for comments will be made by a Bugzilla moderator, and the report will be closed accordingly.
 
 ### Report Templates
 
@@ -365,7 +367,7 @@ If certificates are impacted, the Impact section MUST include the following info
 | **Analysis** | Required when the Whiteboard field contains ‘revocation-delay’, the factors and rationales behind the decision to delay revocation (including detailed and substantiated explanations of how extensive harm would result to third parties–such as essential public services or widely relied-upon systems–and why the situation is exceptionally rare and unavoidable). |
 | **Additional considerations** | This field is optional. Share any additional considerations that might be useful in describing the size and nature of the incident. For example, if the issue affected pre-certificates and "final" certificates differently, describe how and why in more detail here. |
 
-**Timeline:** The Timeline section includes a detailed timeline of all events and actions leading up to and taken during and after the incident. The timeline MUST include not just the actual discovery of the incident and subsequent events, but also relevant events occurring beforehand (e.g., something changed or was introduced). All times MUST be in UTC OR UTC+local offset, and SHOULD have at least minute-level granularity.
+**Timeline:** The Timeline section includes a detailed timeline of all events and actions leading up to and taken during and after the incident. The timeline MUST include not just the actual discovery of the incident and subsequent events, but also relevant events occurring beforehand (e.g., something changed or was introduced). All times MUST be in UTC or UTC+local offset, and SHOULD have at least minute-level granularity.
 
 Expected Timeline elements:
 - All policy, process, and software changes that contributed to the Root Cause(s)
