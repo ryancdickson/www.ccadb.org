@@ -429,15 +429,15 @@ For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a 
 |---------------------------------|------------------------------------------| 
 | **Pre-certificate SHA-256 hash** | The SHA-256 hash of the DER encoded pre-certificate. |
 | **Certificate SHA-256 hash** | The SHA-256 hash of the DER encoded certificate. |
-| **Subject** | The Subject field of the Certificate. |
-| **Issuer** | The Issuer field of the Certificate. |
-| **Not before** | The notBefore field of the Certificate. |
-| **Not after** | The notAfter field of the Certificate. |
-| **Serial #** | The Serial Number field of the Certificate, in hex. |
-| **dNSNames** | The dNSName appearing in the Certiifcate. |
+| **Subject** | The Subject field of the certificate. |
+| **Issuer** | The Issuer field of the certificate. |
+| **Not before** | The notBefore field of the certificate. |
+| **Not after** | The notAfter field of the certificate. |
+| **Serial #** | The Serial Number field of the certificate, in hex. |
+| **dNSNames** | The dNSName appearing in the certificate. |
 | **Is revoked?** | "Yes", "Planned","Delayed", or "N/A" (for expired) |
 | **Revocation date** | Actual Date, Planned Date, or "N/A" |
-| **Revocation reason** | The reasonCode corresponding with the Certificate's entry on the CRL. |
+| **Revocation reason** | The reasonCode corresponding with the certificate's entry on the CRL. |
 
 For incidents affecting 10,000 or more certificates, a CA Owner MAY instead attach a text file where each line is of the form https://crt.sh/?sha256=[sha256 fingerprint of the certificate].
 
