@@ -158,8 +158,9 @@ To ensure productive dialogue, please keep all comments constructive, relevant t
 - **To better encourage blamelessness**, when posting incident reports or responding to comments on reports for which they are affiliated, participants MAY respond from a Bugzilla account associated with one of the CA e-mail aliases disclosed to the CCADB, rather than an individual contributor’s account.
 - **To better respect a desire for individual privacy and potential risk of retaliation**, individuals participating in the reporting process MAY participate **responsibly** from an account that does not identify the individual posting or their organizational affiliation.
 
-**For everyone else:** Create a new Bugzilla account following [these](https://bugzilla.mozilla.org/createaccount.cgi) instructions. Remember, please keep all comments constructive, relevant to the corresponding report, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c).
+**For everyone else:** Create a new Bugzilla account following [these](https://bugzilla.mozilla.org/createaccount.cgi) instructions. 
 
+**Remember**, please keep all comments constructive, relevant to the corresponding report, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c).
 
 ### Report lifecycle management
 
