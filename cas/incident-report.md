@@ -396,12 +396,10 @@ Expected Timeline elements:
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
-| **Description** | A detailed description of the specific issue. |
-| **Issue onset** | Date when the issue began. |
-| **Issue detection** | Date when the issue was detected or otherwise made known. |
-| **Issue resolution** | Actual or planned date and time when the issue will be considered resolved. |
-| **Symptoms that led to detection** | A detailed description of the circumstances that led to the detection of the issue. |
-| **How the issue avoided detection** | A detailed description of how the issue was not detected earlier. |
+| **Contributing factor** | Describe a specific condition, event, or issue that contributed to the incident. Analyze its role in the incident's development. Consider when this factor first arose and its initial impact.  |
+| **Timeline of contributing factor** | Trace the timeline of this contributing factor from its inception to its role in the incident. When was it introduced or created? How did it evolve over time? |
+| **Evasion of detection** | Explain how this specific contributing factor avoided detection prior to the incident. Were there inadequate safeguards, missed signals, or other factors that allowed it to persist? |
+| **Interaction with other factors** | Analyze how this contributing factor interacted with other identified factors to create the conditions for the incident. Did it amplify other issues or create new vulnerabilities? |
 | **Root Cause Analysis methodology used** | This field is optional, but recommended. A description of the methodology used to derive the issue described above (e.g., "5-Whys", Fishbone Diagram, Pareto Analysis, etc.) |
 
 **Lessons Learned:** The Lessons Learned section describes what the organization learned from the incident, including what they did well and what they need to improve.
@@ -437,6 +435,7 @@ For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a 
 | **Not before** | The notBefore field of the Certificate. |
 | **Not after** | The notAfter field of the Certificate. |
 | **Serial #** | The Serial Number field of the Certificate, in hex. |
+| **dNSNames** | The dNSName appearing in the Certiifcate. |
 | **Is revoked?** | "Yes", "Planned","Delayed", or "N/A" (for expired) |
 | **Revocation date** | Actual Date, Planned Date, or "N/A" |
 | **Revocation reason** | The reasonCode corresponding with the Certificate's entry on the CRL. |
