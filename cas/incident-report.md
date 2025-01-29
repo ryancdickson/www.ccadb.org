@@ -142,7 +142,7 @@ Some Root Store Operator policies require CA Owners to submit an Incident Report
   
 #### Are there other ways to become involved in the reporting process?
 
-Absolutely! There are many ways to participate in the incident reporting processes beyond submitting new reports. Everyone is encouraged to actively contribute by commenting on existing reports and engaging in constructive discussions. This can include, but is not limited to:
+Absolutely! There are many ways to participate in the incident reporting process beyond submitting new reports. Everyone is encouraged to actively contribute by commenting on existing reports and engaging in constructive discussions. This can include, but is not limited to:
 - providing additional information,
 - asking clarifying questions,
 - discussing technical aspects of the incident,
