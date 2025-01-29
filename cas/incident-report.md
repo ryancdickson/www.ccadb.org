@@ -18,7 +18,7 @@ This page describes the CCADB Incident Reporting Framework and corresponding gui
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-These guidelines consider pre-certificates (as described in [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962)) distinct from certificates. Unless otherwise stated, "certificate" on this page refers to a final certificate, distinct from a pre-certificate.
+Unless otherwise stated, "certificate" on this page refers to a final certificate, distinct from a precertificate (as described in [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962)).
 
 ## Table of Contents
 
@@ -365,7 +365,7 @@ If certificates are impacted, the Impact section MUST include the following info
 | **Incident heuristic** | **EITHER:** <br><br>**(1)** describe a heuristic that would allow a third party to assemble the full corpus of affected certificates, if not provided in the Appendix (e.g., "Any certificate containing policy OID 1.2.3.4.5.6 and issued between 11/13/2024 and 4/11/2024 is affected by this incident. Certificates that have been revoked or are expired are omitted from the certificate list disclosed in the Appendix.") <br><br> **(2)** clearly explain why this isn't possible (e.g., "This incident affected every certificate issued between 5/25/2023 and 6/15/2024 that relied upon BR Validation Method 3.2.2.4.19. Because the relied upon validation method is not described in a certificate, this heuristic cannot be used by a third party to assemble the full corpus of affected certificates. Certificates that have been revoked or expired have been omitted from the certificate list disclosed in the Appendix.), or <br><br> **(3)** the full corpus of affected certificates are disclosed in the Appendix.|
 | **Was issuance stopped in response to this incident, and why or why not?** | Yes/No with explanation (e.g., "Yes. As described in the incident timeline, issuance was stopped after learning of this issue to correct the corresponding certificate profile.") |
 | **Analysis** | Required when the Whiteboard field contains ‘revocation-delay’, the factors and rationales behind the decision to delay revocation (including detailed and substantiated explanations of how extensive harm would result to third parties–such as essential public services or widely relied-upon systems–and why the situation is exceptionally rare and unavoidable). |
-| **Additional considerations** | This field is optional. Share any additional considerations that might be useful in describing the size and nature of the incident. For example, if the issue affected pre-certificates and "final" certificates differently, describe how and why in more detail here. |
+| **Additional considerations** | This field is optional. Share any additional considerations that might be useful in describing the size and nature of the incident. For example, if the issue affected precertificates and "final" certificates differently, describe how and why in more detail here. |
 
 **Timeline:** The Timeline section includes a detailed timeline of all events and actions leading up to and taken during and after the incident. The timeline MUST include not just the actual discovery of the incident and subsequent events, but also relevant events occurring beforehand (e.g., something changed or was introduced). All times MUST be in UTC or UTC+local offset, and SHOULD have at least minute-level granularity.
 
@@ -422,13 +422,13 @@ Expected Timeline elements:
 | **Due date** | A date by which the action item will be complete. |
 | **Status** | Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled". |
 
-**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates (i.e, not only pre-certificates), the Appendix MUST disclose details related to the affected certificates.
+**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates (i.e, not only precertificates), the Appendix MUST disclose details related to the affected certificates.
 
 For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a comma separated listing of certificate details including the following fields for each:
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
-| **Pre-certificate SHA-256 hash** | The SHA-256 hash of the DER encoded pre-certificate. |
+| **Precertificate SHA-256 hash** | The SHA-256 hash of the DER encoded precertificate. |
 | **Certificate SHA-256 hash** | The SHA-256 hash of the DER encoded certificate. |
 | **Subject** | The Subject field of the certificate. |
 | **Issuer** | The Issuer field of the certificate. |
