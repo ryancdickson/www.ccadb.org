@@ -424,7 +424,9 @@ Expected Timeline elements:
 | **Due date** | A date by which the action item will be complete. |
 | **Status** | Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled". |
 
-**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates, the Appendix MUST include a comma separated listing of certificate details of all affected certificates and include the following fields for each:
+**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates, the Appendix MUST disclose details related to the affected certificates.
+
+For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a comma separated listing of certificate details including the following fields for each:
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
@@ -438,6 +440,8 @@ Expected Timeline elements:
 | **Is revoked?** | "Yes", "Planned","Delayed", or "N/A" (for expired) |
 | **Revocation date** | Actual Date, Planned Date, or "N/A" |
 | **Revocation reason** | The reasonCode corresponding with the Certificate's entry on the CRL. |
+
+For incidents affecting 10,000 or more certificates, a CA Owner MAY instead attach a text file where each line is of the form https://crt.sh/?sha256=[sha256 fingerprint of the certificate].
 
 When the incident being reported involves an S/MIME certificate, if disclosure of personally identifiable information in the certificate MAY be contrary to applicable law, please provide at least the certificate serial number and SHA256 hash of the certificate.
 
