@@ -359,7 +359,7 @@ If certificates are impacted, the Impact section MUST include the following info
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
-| **Total number of certificates** | The total count of all certificates affected by the issue(s) described in this Incident Report, including expired and revoked certificates. |
+| **Total number of certificates** | The total count of all certificates (i.e., "final" certificates) affected by the issue(s) described in this Incident Report, including expired and revoked certificates. |
 | **Total number of "remaining valid" certificates** | The total count of certificates affected by the issue(s) described in this Incident Report, minus expired and revoked certificates. Minimally, this set of certificates MUST be disclosed in the Appendix section of this report. |
 | **Affected certificate types** |  A summary of the corresponding CA/Browser Forum policy OIDs (i.e., DV, IV, OV, and EV) that appear in the certificates affected by this incident (e.g., "This incident affects DV and OV certificates.”) |
 | **Incident heuristic** | **EITHER:** <br><br>**(1)** describe a heuristic that would allow a third party to assemble the full corpus of affected certificates, if not provided in the Appendix (e.g., "Any certificate containing policy OID 1.2.3.4.5.6 and issued between 11/13/2024 and 4/11/2024 is affected by this incident. Certificates that have been revoked or are expired are omitted from the certificate list disclosed in the Appendix.") <br><br> **(2)** clearly explain why this isn't possible (e.g., "This incident affected every certificate issued between 5/25/2023 and 6/15/2024 that relied upon BR Validation Method 3.2.2.4.19. Because the relied upon validation method is not described in a certificate, this heuristic cannot be used by a third party to assemble the full corpus of affected certificates. Certificates that have been revoked or expired have been omitted from the certificate list disclosed in the Appendix.), or <br><br> **(3)** the full corpus of affected certificates are disclosed in the Appendix.|
@@ -428,8 +428,8 @@ For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a 
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
-| **Pre-certificate SHA-256 hash** | A SHA-256 hash of the DER encoded pre-certificate. |
-| **Certificate SHA-256 hash** | A SHA-256 hash of the DER encoded certificate. |
+| **Pre-certificate SHA-256 hash** | The SHA-256 hash of the DER encoded pre-certificate. |
+| **Certificate SHA-256 hash** | The SHA-256 hash of the DER encoded certificate, should it exist. |
 | **Subject** | The Subject field of the Certificate. |
 | **Issuer** | The Issuer field of the Certificate. |
 | **Not before** | The notBefore field of the Certificate. |
