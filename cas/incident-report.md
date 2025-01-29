@@ -292,7 +292,7 @@ Learn more about expected report content and a description of the fields include
 ** Contributing Factor #: title**
 - **Description:** 
 - **Timeline:** 
-- **Evasion of detection:** 
+- **Detection:** 
 - **Interaction with other factors:** 
 - **Root Cause Analysis methodology used:**
 
@@ -393,7 +393,7 @@ Expected Timeline elements:
 |---------------------------------|------------------------------------------| 
 | **Description** | Describe the specific condition, event, or issue that contributed to the incident. Analyze its role in the incident's development. Consider when this factor first arose and its initial impact.  |
 | **Timeline** | Trace the timeline of the contributing factor from its inception to its role in the incident. When was it introduced or created? How did it evolve over time? |
-| **Evasion of detection** | Explain how the specific contributing factor avoided detection prior to the incident. Were there inadequate safeguards, missed signals, or other factors that allowed it to persist? |
+| **Detection** | Describe how the contributing factor was detected, and explain how it avoided detection prior to the incident. Were there inadequate safeguards, missed signals, or other factors that allowed it to persist? |
 | **Interaction with other factors** | Analyze how the contributing factor interacted with other identified factors to create the conditions for the incident. Did it amplify other issues or create new vulnerabilities? |
 | **Root Cause Analysis methodology used** | This field is optional, but recommended. A description of the methodology used to derive the issue described above (e.g., "5-Whys", Fishbone Diagram, Pareto Analysis, etc.) |
 
