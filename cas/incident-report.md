@@ -196,7 +196,7 @@ Learn more about expected report content and a description of the fields include
 
 #### When are reports expected?
 
-Within 72 hours of a CA Owner becoming aware of an incident (the "initial incident disclosure") or an audit finding not previously disclosed in an Incident Report, the CA Owner MUST either:
+Within 72 hours of a CA Owner becoming aware of an incident (i.e., the "initial incident disclosure") or an audit finding not previously disclosed in an Incident Report, the CA Owner MUST either:
 
 - disclose a Preliminary or Full Incident Report; or
 - respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
