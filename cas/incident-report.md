@@ -392,7 +392,7 @@ Expected Timeline elements:
 | **Opened date** | The date the related incident was opened. |
 | **Description** | A description of how the related incident is similar to the subject incident report. |
 
-**Root Causes:** The Root Causes section contains a detailed analysis of the conditions which combined to give rise to the issue. It is unusual for an incident to have a single root cause; often there is a confluence of several issues such as a software bug, insufficient checks, and a malformed request. Make sure that all contributing causes are identified and described, including noting when they first arose and how they avoided detection until they were discovered or identified.  
+**Root Causes:** The Root Causes section contains a detailed analysis of the conditions which combined to give rise to the issue. It is unusual for an incident to have a single root cause; often there is a confluence of several issues such as a software bug, insufficient checks, and a malformed request. Make sure that all contributing factors are identified and described, including noting when they first arose and how they avoided detection until they were discovered or identified.  
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
