@@ -14,7 +14,9 @@ Systems, processes, and people aren't perfect. Omissions and deviations from exp
 
 This page describes the CCADB Incident Reporting Framework and corresponding guidelines. For questions, contact support [at] ccadb [dot] org.
 
-**Note:** The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+**Notes:** 
+- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+- These guidelines consider pre-certificates (as described in [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962)) distinct from certificates. These terms should be interpreted literally when reading this page. 
 
 ## Table of Contents
 
@@ -291,13 +293,11 @@ Learn more about expected report content and a description of the fields include
 
 ### Root Cause Analysis
 
-** Issue #: Issue title**
+** Contributing Factor #: title**
 - **Description:** 
-- **Issue onset:** 
-- **Issue detection:** 
-- **Issue resolution:** 
-- **Symptoms that led to detection:**
-- **How the issue avoided detection:**
+- **Timeline:** 
+- **Evasion of detection:** 
+- **Interaction with other factors:** 
 - **Root Cause Analysis methodology used:**
 
 ### Lessons Learned
@@ -397,10 +397,10 @@ Expected Timeline elements:
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
-| **Contributing factor** | Describe a specific condition, event, or issue that contributed to the incident. Analyze its role in the incident's development. Consider when this factor first arose and its initial impact.  |
-| **Timeline of contributing factor** | Trace the timeline of this contributing factor from its inception to its role in the incident. When was it introduced or created? How did it evolve over time? |
-| **Evasion of detection** | Explain how this specific contributing factor avoided detection prior to the incident. Were there inadequate safeguards, missed signals, or other factors that allowed it to persist? |
-| **Interaction with other factors** | Analyze how this contributing factor interacted with other identified factors to create the conditions for the incident. Did it amplify other issues or create new vulnerabilities? |
+| **Description** | Describe the specific condition, event, or issue that contributed to the incident. Analyze its role in the incident's development. Consider when this factor first arose and its initial impact.  |
+| **Timeline** | Trace the timeline of the contributing factor from its inception to its role in the incident. When was it introduced or created? How did it evolve over time? |
+| **Evasion of detection** | Explain how the specific contributing factor avoided detection prior to the incident. Were there inadequate safeguards, missed signals, or other factors that allowed it to persist? |
+| **Interaction with other factors** | Analyze how the contributing factor interacted with other identified factors to create the conditions for the incident. Did it amplify other issues or create new vulnerabilities? |
 | **Root Cause Analysis methodology used** | This field is optional, but recommended. A description of the methodology used to derive the issue described above (e.g., "5-Whys", Fishbone Diagram, Pareto Analysis, etc.) |
 
 **Lessons Learned:** The Lessons Learned section describes what the organization learned from the incident, including what they did well and what they need to improve.
@@ -423,14 +423,14 @@ Expected Timeline elements:
 | **Due date** | A date by which the action item will be complete. |
 | **Status** | Describe the status of the action item using either "Ongoing", "Complete", "Delayed", or "Canceled". |
 
-**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates, the Appendix MUST disclose details related to the affected certificates.
+**Appendix:** The Appendix section is for all supporting data: log files, graphs and charts, etc. In the case of incidents that directly impact certificates (i.e, not only pre-certificates), the Appendix MUST disclose details related to the affected certificates.
 
 For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a comma separated listing of certificate details including the following fields for each:
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
 | **Pre-certificate SHA-256 hash** | The SHA-256 hash of the DER encoded pre-certificate. |
-| **Certificate SHA-256 hash** | The SHA-256 hash of the DER encoded certificate, should it exist. |
+| **Certificate SHA-256 hash** | The SHA-256 hash of the DER encoded certificate. |
 | **Subject** | The Subject field of the Certificate. |
 | **Issuer** | The Issuer field of the Certificate. |
 | **Not before** | The notBefore field of the Certificate. |
