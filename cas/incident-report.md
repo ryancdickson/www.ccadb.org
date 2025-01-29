@@ -14,7 +14,7 @@ Systems, processes, and people aren't perfect. Omissions and deviations from exp
 
 This page describes the CCADB Incident Reporting Framework and corresponding guidelines. For questions, contact support [at] ccadb [dot] org.
 
-## Definitions
+### Definitions
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
