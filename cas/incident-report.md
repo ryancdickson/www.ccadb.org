@@ -232,7 +232,7 @@ When all Action Items are complete and no outstanding comments or questions rema
 
 ### Report Templates
 
-The following templates describe the expected contents of Incident Reports.  All reports MUST adhere to the latest version of these guidelines.
+The following templates MUST be used when submitting incident reports or requesting report closures.
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
 - [Report Closure Template](#closure-report)
