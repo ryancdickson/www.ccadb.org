@@ -67,11 +67,11 @@ Minimally, a failure to meet the commitments described in any of the following p
 - the CCADB Policy; or
 - any applicable Root Store Operator policy.
 
-Root Store Operator policies may further describe what those individual programs consider incidents, and/or additional incident reporting expectations.
+Root Store Operator policies may further define what those individual programs consider incidents and/or outline additional incident reporting expectations.
 
 It's important to note that the existence of an Incident Report does not generally indicate serious problems with a CA. 
 
-Further, when considering the public incident reporting expectations of publicly-trusted CA Owners, the number of incident reports filed to Bugzilla is less important than the behavior observed in those reports. 
+For publicly-trusted CA Owners, the number of incident reports filed in Bugzilla is less important than the content and quality of those reports.
 
 #### What is considered an audit finding?
 
@@ -122,16 +122,15 @@ Effective Root Cause Analysis (RCA) minimally considers the following points:
 
 4. **Consider all potential contributing factors**. RCAs consider a broad range of potential causes, including technical issues, policy issues, human factors, process breakdowns, and external influences. It's crucial to avoid jumping to conclusions or focusing solely on the most obvious cause(s).
 
-5. **Collect and analyze data**. Data is critical for supporting RCA conclusions. This might involve reviewing logs, monitoring metrics, internal incident reports, and other relevant information to identify patterns and anomalies.
+5. **Collect and analyze data**. Data is critical for supporting RCA conclusions and may include reviewing logs, monitoring metrics, internal incident reports, and other relevant information to identify patterns and anomalies.
 
-6. **Involve relevant stakeholders**. RCAs are a collaborative effort involving engineers, operators, support teams, and other relevant stakeholders. This helps ensure a diverse range of perspectives and expertise is considered.
+6. **Involve relevant stakeholders**. RCAs are a collaborative effort involving engineers, operators, support teams, and other relevant stakeholders to ensure a diverse range of perspectives and expertise is considered.
 
-7. **Prioritize action items**. The ultimate goal of an RCA is to prevent future incidents caused by the same failures. Therefore, it's important to identify and prioritize actionable recommendations that address the root causes identified.
+7. **Prioritize action items**. The ultimate goal of an RCA is to prevent future incidents caused by the same failures; therefore, it's important to identify and prioritize actionable recommendations that address the identified root causes.
 
 8. **Focus on blameless postmortems**. Emphasize a blameless culture when conducting postmortems. The focus is on learning from the incident and improving systems, not on assigning blame or punishing individuals.
 
 9. **Continuously improve the process**. RCA is an iterative process where an organization continuously refines its approach based on lessons learned from previous incidents and evolving best practices.
-
 
 ### Community participation in the reporting process
 
@@ -154,7 +153,7 @@ Absolutely! There are many ways to participate in the incident reporting process
 
 Individuals representing CA Owners are especially encouraged to participate broadly in the reporting processes, extending their contributions beyond incidents involving only their own organization. Sharing insights and perspectives across organizational boundaries fosters a collaborative learning environment and strengthens the overall security posture of the Web PKI ecosystem.
 
-To ensure productive dialogue, please keep all comments constructive, relevant to the report, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c).
+Please keep all comments constructive, relevant, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c) to ensure productive dialogue.
 
 #### What Bugzilla account can I use?
 
@@ -173,7 +172,7 @@ To ensure productive dialogue, please keep all comments constructive, relevant t
 Create a new Bugzilla issue by filling out [this form](https://bugzilla.mozilla.org/enter_bug.cgi?format=__default__&product=CA%20Program&component=CA%20Certificate%20Compliance&bug_type=task). 
 
 - The "Summary" field in Bugzilla (i.e., "Subject line") MUST begin with the CA Owner’s name, followed by a colon, and a brief title that highlights the type of incident being reported (e.g., "EXAMPLE CA OWNER: Incorrect Subject RDN Encoding"). The CA Owner's name SHOULD match exactly with the CA Owner value in the CCADB.
-- The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)). 
+- The "Description" field MAY contain a Preliminary or Full Incident Report (copied and pasted from the corresponding Markdown template, as explained [below](#report-templates)).
 
 #### How are reports scoped?
 
@@ -182,7 +181,7 @@ There SHOULD be a single Incident Report for each distinct matter, and CA Owners
 - in the process of researching one incident, another incident with a distinct root cause and/or remediation is discovered.
 - after an incident is marked resolved in Bugzilla, the incident reoccurs.
 
-All reports MUST be free-standing (i.e., not rely upon the contents of other reports). Reports MAY repeat things previously stated in discussions or Bugzilla comments, in which case the report SHOULD state a summary of previous findings. The existence of data in discussions or Bugzilla comments does not excuse a CA Owner from the task of compiling a report that aligns with the guidance on this page.
+All reports MUST be free-standing and not rely on the contents of other reports.  While reports MAY repeat information from discussions or Bugzilla comments, they SHOULD summarize previous findings.  CA Owners are responsible for compiling a complete report according to these guidelines, even if information exists elsewhere.
 
 #### What format is used?
 
@@ -197,11 +196,13 @@ Learn more about expected report content and a description of the fields include
 
 #### When are reports expected?
 
-Within 72 hours of the CA Owner being made aware of an incident (i.e., "initial incident disclosure") or audit finding not previously disclosed in an Incident Report, the CA Owner MUST either:
+Within 72 hours of a CA Owner becoming aware of an incident (the "initial incident disclosure") or an audit finding not previously disclosed in an Incident Report, the CA Owner MUST either:
+
 - disclose a Preliminary or Full Incident Report; or
 - respond to a Preliminary Incident Report previously created for the incident by a third party reporter.
 
-In its first Report (i.e., Preliminary or Full Incident Report) or reply to a submission from a third party reporter, the CA Owner MUST:
+In its initial report (i.e, Preliminary or Full Incident Report) or reply to a third-party report, the CA Owner MUST:
+
 - accurately disclose the impact of the incident (e.g., the corpus of then-known mis-issued certificates); and
 - describe whether the incident should be considered contained (e.g., because certificate issuance was stopped) or ongoing.
 
@@ -211,7 +212,7 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 
 #### When are reports updated?
 
-CA Owners SHOULD respond promptly to comments and questions and MUST respond to a question or request within 7 days, even if the response is only to acknowledge the request or question and provide a later date when a response will be delivered.
+CA Owners should respond promptly to comments and questions, and must respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
 Open reports MUST be updated:
 - on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
@@ -227,7 +228,7 @@ In the case of Incident Reports with a Whiteboard field of "revocation-delay", r
 
 #### How are reports closed?
 
-If (1) all Action Items are marked as complete and (2) there are no outstanding comments or questions that need to be addressed, CA Owners MUST clearly communicate in a Bugzilla comment when they believe the report can be closed. This is accomplished by writing a short summary that includes:
+When all Action Items are complete and no outstanding comments or questions remain, CA Owners MUST request closure in a Bugzilla comment. This comment should include:
 - a description of the incident, its root cause(s), and remediation;
 - a summary of all ongoing commitments made in response to the incident, if any; and
 - an attestation that all Action Items have been completed.
@@ -236,14 +237,14 @@ CA Owners MUST use the template [below](#incident-closure-summary) to indicate r
 
 ### Report Templates
 
-The templates below describe the expected contents of an Incident Report. When creating one of these reports, the latest version of this guidance MUST be relied upon.
+The following templates describe the expected contents of Incident Reports.  All reports MUST adhere to the latest version of these guidelines.
 - [Preliminary Incident Report Template](#preliminary-incident-report)
 - [Full Incident Report Template](#full-incident-report)
 - [Report Closure Template](#closure-report)
 
-If submitted by the CA Owner corresponding with the report, all fields included in the relevant template MUST be completed. Fields that are not applicable MUST be included in the report and identified as 'N/A'.
+CA Owners submitting reports MUST complete all applicable fields in the relevant template.  Fields that are not applicable MUST still be included and marked 'N/A'.
 
-Learn more about expected report content and a description of the fields included in the templates below [here](#incident-report-field-definitions-and-expectations).
+Learn more about expected report content and a description of the fields included in the templates [below](#incident-report-field-definitions-and-expectations).
 
 #### Preliminary Incident Report
 
@@ -391,7 +392,7 @@ Expected Timeline elements:
 | **Opened date** | The date the related incident was opened. |
 | **Description** | A description of how the related incident is similar to the subject incident report. |
 
-**Root Causes:** The Root Causes section contains a detailed analysis of the conditions which combined to give rise to the issue. It is unusual for an incident to have a single root cause; often there is a confluence of several issues such as a software bug, insufficient checks, and a malformed request. Make sure that all contributing factors are identified and described, including noting when they first arose and how they avoided detection until they were discovered or identified.  
+**Root Causes:** The Root Causes section contains a detailed analysis of the conditions which combined to give rise to the issue. It is unusual for an incident to have a single root cause; often there is a confluence of several issues such as a software bug, insufficient checks, and a malformed request. Make sure that all contributing factors are identified and described, including noting when they first arose and how they avoided detection until they were discovered or identified.
 
 | Field                           | Description                              |  
 |---------------------------------|------------------------------------------| 
@@ -482,7 +483,7 @@ The Incident Closure Summary allows a CA Owner to signal they believe an inciden
 6. **Engage with the community**:
    - Participate in Web PKI forums and email distributions (e.g., public@ccadb.org) to both learn from and contribute to community knowledge.
    - Share incident learnings in a way that respects confidentiality but helps other organizations prevent similar issues.
-   - Read and adopt best practices found in the [Bugzilla Incident Reports filed by other CA Owners](https://bugzilla.mozilla.org/buglist.cgi?product=CA%20Program&component=CA%20Certificate%20Compliance&bug_status=__open__&list_id=17075089).  
+   - Read and adopt best practices found in the [Bugzilla Incident Reports filed by other CA Owners](https://bugzilla.mozilla.org/buglist.cgi?product=CA%20Program&component=CA%20Certificate%20Compliance&bug_status=__open__&list_id=17075089).
 
 7. **Share iterative updates**:
    - Provide an initial response, followed by regular updates aligned with ["When should Incident Reports be updated?"](#when-should-incident-reports-be-updated) as new information becomes available or as fixes are deployed..
