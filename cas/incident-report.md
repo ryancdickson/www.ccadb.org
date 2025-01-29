@@ -14,9 +14,11 @@ Systems, processes, and people aren't perfect. Omissions and deviations from exp
 
 This page describes the CCADB Incident Reporting Framework and corresponding guidelines. For questions, contact support [at] ccadb [dot] org.
 
-**Notes:** 
-- The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
-- These guidelines consider pre-certificates (as described in [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962)) distinct from certificates. These terms should be interpreted literally when reading this page. 
+## Definitions
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" on this page are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+
+These guidelines consider pre-certificates (as described in [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962)) distinct from certificates. Unless otherwise stated, "certificate" on this page refers to a final certificate, distinct from a pre-certificate.
 
 ## Table of Contents
 
@@ -207,7 +209,6 @@ If the described impact of the incident is later found to be inaccurate, the CA 
 
 While Full Incident Reports SHOULD be posted as soon as possible, they MUST be posted within 14 days of the incident’s initial disclosure.
 
-
 #### When are reports updated?
 
 CA Owners SHOULD respond promptly to comments and questions and MUST respond to a question or request within 7 days, even if the response is only to acknowledge the request or question and provide a later date when a response will be delivered.
@@ -284,7 +285,6 @@ Learn more about expected report content and a description of the fields include
 
 ### Timeline
 
-
 ### Related Incidents
 
 | Bug                                | Date                        | Description                                                            |
@@ -315,7 +315,6 @@ Learn more about expected report content and a description of the fields include
 
 ### Appendix
 
-
 ```
 
 #### Closure Report
@@ -332,7 +331,6 @@ Learn more about expected report content and a description of the fields include
 All Action Items disclosed in this report have been completed as described, and we request its closure.
 
 ```
-
 
 ### Report field definitions and expectations
 
@@ -455,7 +453,6 @@ The Incident Closure Summary allows a CA Owner to signal they believe an inciden
 | **Incident Root Cause(s)** | A few sentences summarizing the root cause(s). |
 | **Remediation description** | A few sentences summarizing the incident's remediation. |
 | **Commitment summary** | A list of any ongoing commitments made in response to this incident beyond those described in the Action Items section. Ongoing commitments can be a useful representation of a CA Owner's continuous improvement efforts and should be considered distinct from, but complementary to Action Items included in the report given a broader scope and long-term or continuous timeframe that would otherwise result in the subject incident report being open for an extended period of time. |
-
 
 ### Illustrative practices
 
