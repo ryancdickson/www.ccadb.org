@@ -212,7 +212,7 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 
 #### When are reports updated?
 
-CA Owners should respond promptly to comments and questions, and must respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
+CA Owners should respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
 Open reports MUST be updated:
 - on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
