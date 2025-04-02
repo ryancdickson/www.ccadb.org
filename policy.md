@@ -510,11 +510,11 @@ Chrome Root Program Participants MUST:
 [x]Disclose all subordinate CA certificates capable of validating to a certificate included in the Chrome Root Store or associated with a Root Inclusion Request to the CCADB. Disclosure MUST take place within 7 calendar days of issuance and before the subject CA represented in the certificate begins issuing publicly-trusted certificates.
 [x] Disclose revocation of all subordinate CA certificates capable of validating to a certificate included in the Chrome Root Store or associated with a Root Inclusion Request to the CCADB within 7 calendar days of revocation.
 Disclose either the Certificate Revocation List (CRL) Distribution Point or a JSON Array of Partitioned CRLs on root and subordinate CA certificate records in the CCADB within 7 days of the corresponding CA issuing its first certificate. This applies to each included CA certificate and each CA certificate chaining up to a certificate included in the Chrome Root Store.
-a. URLs SHOULD be of the "http" scheme (i.e., not "https").
-b. When populating the CCADB with multiple CRL URLs for the JSON Array of Partitioned CRLs, Chrome Root Program Participants MUST ensure that each CRL contains a critical Issuing Distribution Point extension and the distributionPoint field of the extension MUST include a UniformResourceIdentifier.
+[x] a. URLs SHOULD be of the "http" scheme (i.e., not "https").
+[x] b. When populating the CCADB with multiple CRL URLs for the JSON Array of Partitioned CRLs, Chrome Root Program Participants MUST ensure that each CRL contains a critical Issuing Distribution Point extension and the distributionPoint field of the extension MUST include a UniformResourceIdentifier.
 The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the subordinate CA certificate.
-c. When providing a single CRL URL in the CCADB, the CRL SHOULD NOT contain an Issuing Distribution Point extension.
-Complete and submit an annual self-assessment to the CCADB. Instructions for completing the self-assessment are included in the required assessment template.
+[x] c. When providing a single CRL URL in the CCADB, the CRL SHOULD NOT contain an Issuing Distribution Point extension.
+[x] Complete and submit an annual self-assessment to the CCADB. Instructions for completing the self-assessment are included in the required assessment template.
 
 
 
