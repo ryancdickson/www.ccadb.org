@@ -370,7 +370,7 @@ An annual self-assessment MUST be completed and submitted to the CCADB within 92
 
 ## 7. Mailshots
 
-From time to time, a Root Store Operator MAY use the CCADB to send information to CA Owners. Mailshots will be sent to at least the Primary POC(s) and the email aliases, and may also go to one or more of the other POCs; the exact recipient list is defined by the Root Store Operator sending the information.
+From time to time, a Root Store Operator MAY use the CCADB to send information to CA Owners. Mailshots will be sent to at least the Primary POC(s) and the CA Owners' email aliases, and may also go to one or more of the other POCs; the exact recipient list is defined by the Root Store Operator sending the information.
 
 -----
 
