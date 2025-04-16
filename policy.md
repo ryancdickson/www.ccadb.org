@@ -84,9 +84,9 @@ CA Owners MAY optionally designate further POCs, supplying an email address for 
 
 All Primary POCs SHOULD be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and MAY request additional licenses for other Primary POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
 
-Notification of security and audit-related issues MAY be emailed to all Primary POCs, non-personal contact email alias(es), or a combination of these addresses. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
+Notification of security and audit-related issues MAY be emailed to all individual POCs, non-personal contact email alias(es), or a combination of these addresses. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
-CA Owners MUST maintain up to date contact details in the CCADB. If POC information needs to be updated, the CA Owner MUST submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts).
+CA Owners MUST maintain up to date contact details in the CCADB. If POC information needs to be updated, the CA Owner MUST submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts). A CA Owner's non-personal contact email alias(es) MUST be updated with an Add/Update Root Request.
 
 ## 3. Certificate Disclosures
 
