@@ -172,7 +172,7 @@ The URLs to such audit statements and any metadata about them such as the name o
 
 The entry for each subordinate CA certificate has checkboxes to indicate "Audits Same as Parent". When the checkbox is checked, the details do not need to be duplicated from the parent certificate. However, the subordinate CA certificate MUST be specifically listed in the audit statements of the parent certificate.
 
-URLs for the following audit statements are required for each CA certificate, depending upon the purposes for which the certificate and those it issues are trusted.
+URLs for the following audit statements are required for each CA certificate, depending upon the purposes for which the certificate and those it issues are trusted. 
 
 | Trust Purpose | Description | Audits Required |  
 |---|---|---|
@@ -192,6 +192,8 @@ Exceptions to providing these audit statement URLs:
 CA Owners MUST:
 - submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit statements for root CA certificates stored in the CCADB.
 - add or update audit statements for subordinate CA certificates directly on the record in the CCADB (unless the exceptions stated above apply).
+
+If an audit or audit statement disclosed to the CCADB does not meet the requirements of this policy, then a Root Store Operator MAY require that the CA Owner obtain a new audit, at the CA Owner's expense, for the period of time in question. Additionally, depending on the nature of concerns with the audit, a Root Store Operator MAY require that the CA Owner obtain such an audit from a new auditor.
 
 The presence of qualifications in an audit statement is not, by itself, generally considered a reason to remove a CA Owner from a Root Store. The purpose of audits is to honestly and thoroughly assess a CA Owner’s compliance with requirements which are necessary to assure a secure and stable ecosystem. Audit findings, including qualifications, can help to identify opportunities for improvement, whether for individual CAR Owners or for the wider industry as a whole.
 
