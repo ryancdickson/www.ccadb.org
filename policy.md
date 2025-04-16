@@ -80,7 +80,7 @@ CA Owners MUST provide the following information for a Primary Point of Contact 
 * Name
 * CA Owner-affiliated email address
 
-CA Owners MAY optionally designate further POCs, supplying an email address for each. CA Owners MUST also supply at least one non-personal contact email aliases which are more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
+CA Owners MAY optionally designate further POCs, supplying an email address for each. CA Owners MUST also supply at least one non-personal contact email alias that is more likely to continue working as personnel change; these are maintained as part of the CA’s organizational entry.
 
 All Primary POCs SHOULD be authorized to speak for and enter into binding commitments on behalf of the CA(s) that they represent. The Primary POC will be issued a [CA Community license](https://www.ccadb.org/cas/request-access#application-for-ccadb-access) and MAY request additional licenses for other Primary POCs. Primary POCs are responsible for keeping CCADB data accurate for their CA(s).
 
