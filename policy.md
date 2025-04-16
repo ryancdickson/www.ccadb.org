@@ -187,7 +187,8 @@ Exceptions to providing these audit statement URLs:
 
 * The SHA-256 fingerprint of the certificate is specifically listed as in scope in the audit statements of the parent certificate, and the "Audits Same as Parent" checkbox is checked; or
 * The certificate has expired; or
-* The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status.
+* The certificate has been revoked, and the corresponding record in the CCADB has been updated with the correct revocation status; or
+* The certificate was issued after the audit period of the most recently performed audit. In such cases, the certificate MUST be included in the scope of the CA Owner's next periodic audit.
 
 CA Owners MUST:
 - submit an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates) to add or update audit statements for root CA certificates stored in the CCADB.
