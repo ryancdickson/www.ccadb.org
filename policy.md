@@ -86,11 +86,9 @@ All Primary POCs SHOULD be authorized to speak for and enter into binding commit
 
 Notification of security and audit-related issues MAY be emailed to all individual POCs, non-personal contact email alias(es), or a combination of these addresses. CA Owners are advised to make sure those addresses reach sufficient people such that they can respond to an issue in an appropriate timeframe.
 
-CA Owners MUST maintain up to date contact details in the CCADB. If POC information needs to be updated, the CA Owner MUST submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts). A CA Owner's non-personal contact email alias(es) MUST be updated with an Add/Update Root Request.
+CA Owners MUST maintain up to date contact details in the CCADB. If POC information needs to be updated, the CA Owner MUST submit an [Add/Update Contacts Case](https://www.ccadb.org/cas/contacts). A CA Owner's non-personal contact email alias(es) MUST be updated with an [Add/Update Root Request Case](https://www.ccadb.org/cas/updates).
 
 ## 3. Certificate Disclosures
-
-Some Root Store Operators require certificate disclosures to the CCADB.
 
 ### 3.1 Root CA Certificates
 
