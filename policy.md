@@ -1,6 +1,6 @@
 # CCADB Policy
 
-*Version 2.0, Effective: June 1, 2025*
+*Version 2.0, Effective: June 15, 2025*
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Root Store Operators MAY have additional CCADB-related requirements defined in t
 
 |Version|Effective Date|
 |-|-|
-|2.0 (current)|June 1, 2025|
+|2.0 (current)|June 15, 2025|
 |[1.3.1](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3_1.md)|October 29, 2024|
 |[1.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3.md)|October 25, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_2_3.md)|July 19, 2023|
@@ -204,7 +204,7 @@ CA certificates MUST appear in the Issuer’s annual audit statement, beginning 
 Self-signed certificates that share a Subject + SPKI with a root certificate that is, or was, included in a Root Store are treated by Root Store Operators as subordinate CA certificates because they chain up to an included root, so these certificates MUST also be listed in the applicable audit statements according to the [Derived Trust Bits](https://www.ccadb.org/cas/fields#formula-fields) field.
 CA certificates created by cross-signing are also considered subordinate CA certificates by Root Store Operators and MUST be included in all relevant audit statements of the entity that possesses the private key that performed the cross-signing.
 
-Cross-certificates issued before June 1, 2025 that DO NOT contain an EKU MUST appear in all of the Issuer’s annual audit statements for its corresponding Trust Purposes ([described above](policy#5-policy-disclosures)).
+Cross-certificates issued before June 15, 2025 that DO NOT contain an EKU MUST appear in all of the Issuer’s annual audit statements for its corresponding Trust Purposes ([described above](policy#5-policy-disclosures)).
 
 ### 5.2 Audit Statement Content
 
@@ -351,7 +351,7 @@ Some Root Store Operators participating in the CCADB maintain policy requirement
 
 In support of ubiquity use-cases, CA Owners sometimes issue cross-certificates from non-dedicated hierarchy Root CAs (i.e., “multi-purpose hierarchies”) to dedicated-use hierarchy Root CAs. 
 
-Beginning June 1, 2025, when new cross-certificates are issued across PKI hierarchies and the Subject CA’s public key (a) exists in or (b) might exist in a publicly-trusted self-signed Root CA certificate whose hierarchy should be considered dedicated to a specific PKI use case, the following EKU values MUST exist:
+Beginning June 15, 2025, when new cross-certificates are issued across PKI hierarchies and the Subject CA’s public key (a) exists in or (b) might exist in a publicly-trusted self-signed Root CA certificate whose hierarchy should be considered dedicated to a specific PKI use case, the following EKU values MUST exist:
 
 | If the subject hierarchy is dedicated to… | EKU Presence? | EKU OID Permitted? |
 |---|---|---|
