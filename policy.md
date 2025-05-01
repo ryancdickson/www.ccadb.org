@@ -215,7 +215,7 @@ Reports uploaded to the CCADB MUST be publicly available and contain at least th
 1. Full name of the CA Owner or corresponding Affiliate (e.g., organization providing external RA services) that was audited;
 2. Name and address of the organization performing the audit;
 3. Qualifications of the team performing the audit;
-4. The physical locations that were or were not audited;
+4. The physical locations that were and were not audited;
 5. SHA-256 fingerprint of each root and subordinate CA certificate that was in scope of the audit (see format specifications below);
 6. Full names and version numbers of the audit standards that were used during the audit;
 7. List of the CA Owner's applicable policy documents (with version numbers and publication dates) referenced during the audit;
