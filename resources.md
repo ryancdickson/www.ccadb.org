@@ -14,7 +14,7 @@ The Root Store Operators participating in the CCADB are described below, along w
 
 **It is crucial to understand** that each of these root stores is carefully managed for specific use cases and narrow user communities. While the availability of root store reports and associated certificate bundles may seem convenient for re-use, re-purposing custom-built root stores for applications that do not perfectly align with their intended products, communities, or policies can introduce significant risks to security and interoperability. Such misuse can undermine the very protections these root stores are designed to provide. 
 
-In most cases, it's far more appropriate and secure to curate a purpose-built root store tailored to satisfy the specific risk-based determinations of your corresponding user community. To assist user communities in establishing their own root stores, several additional reports are provided in the [Community Reports](community-reports) section of this page. These can help you determine the set of roots most appropriate for your PKI use case and community goals, leading to a more secure and interoperable outcome than simply reusing a public root store.
+In most cases, it's far more appropriate and secure to curate a purpose-built root store tailored to satisfy the specific risk-based determinations of your corresponding user community. To assist user communities in establishing their own root stores, several additional reports are provided in the [Community Reports](#community-reports) section of this page. These can help you determine the set of roots most appropriate for your PKI use case and community goals, leading to a more secure and interoperable outcome than simply reusing a public root store.
 
 #### Apple 
 
