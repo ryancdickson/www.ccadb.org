@@ -10,7 +10,7 @@ The [CCADB Data Usage Terms](rootstores/usage#ccadb-data-usage-terms) applies to
 
 ### Root Store Information
 
-The root programs participating in the CCADB are described below, along with resources and reports that may be helpful to members of the community.
+The Root Store Operators participating in the CCADB are described below, along with resources and reports that may be helpful to members of the community.
 
 **It is crucial to understand** that each of these root stores is carefully managed for specific use cases and narrow user communities. While the availability of root store reports and associated certificate bundles may seem convenient for re-use, re-purposing custom-built root stores for applications that do not perfectly align with their intended products, communities, or policies can introduce significant risks to security and interoperability. Such misuse can undermine the very protections these root stores are designed to provide. 
 
