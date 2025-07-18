@@ -123,7 +123,7 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 #### Use-case Specific Reports
 
-The following reports contain any root CA trusted for the given use PKI use case by at least one CCADB root store operator. 
+The following reports contain any root CA trusted for the given PKI use case by at least one CCADB root store operator. 
 
 | PKI Use Case                   | Downloads         | Note       |
 | ------------------------------ | ----------------- | ---------- |
