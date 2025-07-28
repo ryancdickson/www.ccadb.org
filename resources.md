@@ -18,8 +18,6 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 #### Apple 
 
-**Description:**  
-
 **Policy:** [Apple Root Certificate Program](https://www.apple.com/certificateauthority/ca_program.html) 
 
 **Additional Resources:** 
@@ -38,8 +36,6 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 #### Cisco
 
-**Description:**  
-
 **Policy:** 
 
 **Additional Resources:** 
@@ -50,8 +46,7 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 
 #### Google Chrome 
-
-**Description:** The Chrome Root Store launched in 2022 and is optimized _specifically_ for public TLS server authentication in the Chrome web browser when establishing secure connections to websites. Its design and the Certification Authorities (CAs) included are curated to meet these particular user needs, risk profiles, and security objectives. The canonical source of truth for the Chrome Root Store is [found](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/) in the Chromium source code, and is later replicated to the CCADB. 
+The Chrome Root Store launched in 2022 and is optimized _specifically_ for public TLS server authentication in the Chrome web browser when establishing secure connections to websites. Its design and the Certification Authorities (CAs) included are curated to meet these particular user needs, risk profiles, and security objectives. The canonical source of truth for the Chrome Root Store is [found](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/) in the Chromium source code, and is later replicated to the CCADB. 
 
 **Policy:** [Chrome Root Program Policy](https://g.co/chrome/root-policy)
 
@@ -69,8 +64,6 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 
 #### Microsoft
-
-**Description:**  
 
 **Policy:** [Trusted Root Program Requirements](https://aka.ms/RootCert)
 
@@ -98,8 +91,6 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 
 #### Mozilla  
-
-**Description:**  
 
 **Policy:** [Mozilla Root Store Policy](https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/)
 
