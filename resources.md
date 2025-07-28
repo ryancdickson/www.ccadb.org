@@ -140,15 +140,18 @@ The following reports contain any root CA trusted for the given PKI use case by 
 | IP Security User               | [CSV]() / [PEM]() |            |
 
 #### Additional Reports
-- [All Certificate Information (root and intermediate) in CCADB (CSV)](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2) ([Description](https://docs.google.com/document/d/1S3u0-_YACA7m-3LPpjE-t4WCh2cww_SQFh2C9DJeXHA/edit?usp=sharing) of report fields)
-- [All Included Root Certificate Trust Bit Settings (CSV)](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV)
-- [List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) (use this to report a certificate problem directly to the CA)
-     - [CSV List of CA problem reporting mechanisms (email, etc.)](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsCSV)
-- [List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportV2) (used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844))
-     - [CSV List of CAA Identifiers](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSVV2)
-- [Accepted Roots for Production Certificate Transparency Logs](https://ccadb.my.salesforce-sites.com/ccadb/RootCACertificatesIncludedByRSReportCSV) (includes CAs trusted by at least one of the CCADB root stores)
-- [Accepted Roots for Test Certificate Transparency Logs](https://ccadb.my.salesforce-sites.com/ccadb/RootCACertificatesInclusionReportCSV) (includes CAs that have applied to at least one of the CCADB root stores)
-- [Disclosed Domain Control Validation Practices](https://ccadb.my.salesforce-sites.com/googlechrome/TLSCertDomainValidationCSVFormat)
+
+| Description                    | Downloads         | Note       |
+| ------------------------------ | ----------------- | ---------- |
+| V2 All Certificate Information (root and intermediate) in the CCADB | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2) | Obsolete |
+| V3 All Certificate Information (root and intermediate) in the CCADB | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv3) | [Description](https://docs.google.com/document/d/1S3u0-_YACA7m-3LPpjE-t4WCh2cww_SQFh2C9DJeXHA/edit?usp=sharing) of report fields |
+| All Included Root Certificate Trust Bit Settings | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) | |
+| List of CA problem reporting mechanisms (email, etc.) | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsCSV) / [Custom](https://ccadb.my.salesforce-sites.com/ccadb/AllProblemReportingMechanismsReport) | Use this to report a certificate problem directly to the CA |
+| List of CAA Identifiers | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSVV2) / [Custom](https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportV2) | Used to restrict issuance of certificates to specific CAs via a [DNS Certification Authority Authorization Resource Record](https://tools.ietf.org/html/rfc6844) |
+| Disclosed Domain Control Validation Practices | [CSV](https://ccadb.my.salesforce-sites.com/googlechrome/TLSCertDomainValidationCSVFormat) | |
+| Accepted Roots for Production Certificate Transparency Logs | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/RootCACertificatesIncludedByRSReportCSV) | Includes CAs trusted by at least one of the CCADB root stores |
+| Accepted Roots for Test Certificate Transparency Logs| [CSV](https://ccadb.my.salesforce-sites.com/ccadb/RootCACertificatesInclusionReportCSV) | Includes CAs that have applied to at least one of the CCADB root stores |
+
 
 ### Additional Resources ###
 - [crt.sh Certificate Search](https://crt.sh/)
