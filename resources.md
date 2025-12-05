@@ -13,21 +13,21 @@ The [CCADB Data Usage Terms](rootstores/usage#ccadb-data-usage-terms) applies to
 
 #### Use-case Specific Reports
 
-The following reports contain any root CA certificate trusted for the given PKI use case by at least one CCADB Root Store Operator. 
+The following reports contain any root Certification Authority (CA) certificate trusted for the given PKI use case by at least one CCADB Root Store Operator. 
 
 | PKI Use Case                   | Downloads         | Note       |
 | ------------------------------ | ----------------- | ---------- |
-| TLS Server Authentication      | [CSV]() / [PEM]() |            |
-| TLS Client Authentication      | [CSV]() / [PEM]() |            |
-| S/MIME                         | [CSV]() / [PEM]() |            |
-| Timestamping                   | [CSV]() / [PEM]() |            |
-| Code Signing                   | [CSV]() / [PEM]() |            |
-| Document Signing               | [CSV]() / [PEM]() |            |
-| Encrypting File System         | [CSV]() / [PEM]() |            |
-| IP Security End System         | [CSV]() / [PEM]() |            |
-| IP Security IKE Intermediate   | [CSV]() / [PEM]() |            |
-| IP Security Tunnel Termination | [CSV]() / [PEM]() |            |
-| IP Security User               | [CSV]() / [PEM]() |            |
+| TLS Server Authentication      | [CSV]() |            |
+| TLS Client Authentication      | [CSV]() |            |
+| S/MIME                         | [CSV]() |            |
+| Timestamping                   | [CSV]() |            |
+| Code Signing                   | [CSV]() |            |
+| Document Signing               | [CSV]() |            |
+| Encrypting File System         | [CSV]() |            |
+| IP Security End System         | [CSV]() |            |
+| IP Security IKE Intermediate   | [CSV]() |            |
+| IP Security Tunnel Termination | [CSV]() |            |
+| IP Security User               | [CSV]() |            |
 
 #### Additional Reports
 
@@ -62,10 +62,10 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 | PKI Use Case              | Downloads         | Note       |
 | ------------------------- | ----------------- | ---------- |
-| TLS Server Authentication | [CSV]() / [PEM]() |            |
-| TLS Client Authentication | [CSV]() / [PEM]() |            |
-| S/MIME                    | [CSV]() / [PEM]() |            |
-| Timestamping              | [CSV]() / [PEM]() |            |
+| TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleTLSServerAuthenticationCSV) |            |
+| TLS Client Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleTLSClientAuthenticationCSV) |            |
+| S/MIME                    | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleSMIMECSV) |            |
+| Timestamping              | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=AppleTimestampingCSV) |            |
 
 #### Cisco
 
@@ -83,7 +83,7 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 #### Google Chrome 
 
-The Chrome Root Store launched in 2022 and is optimized _specifically_ for public TLS server authentication in the Chrome web browser when establishing secure connections to websites. Its design and the Certification Authorities (CAs) included are curated to meet these particular user needs, risk profiles, and security objectives. The canonical source of truth for the Chrome Root Store is [found](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/) in the Chromium source code, and is later replicated to the CCADB. 
+The Chrome Root Store launched in 2022 and is optimized _specifically_ for public TLS server authentication in the Chrome web browser when establishing secure connections to websites. Its design and the CAs included are curated to meet these particular user needs, risk profiles, and security objectives. The canonical source of truth for the Chrome Root Store is [found](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/) in the Chromium source code, and is later replicated to the CCADB. 
 
 **Policy:** [Chrome Root Program Policy](https://g.co/chrome/root-policy)
 
@@ -97,7 +97,7 @@ The Chrome Root Store launched in 2022 and is optimized _specifically_ for publi
 
 | PKI Use Case              | Downloads         | Note       |
 | ------------------------- | ----------------- | ---------- |
-| TLS Server Authentication | [CSV]() / [PEM]() | These downloads exclude [constrained](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md#What-does-it-mean-for-a-certificate-in-the-Chrome-Root-Store-to-be-constrained) certificates. |
+| TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=ChromeTLSServerAuthenticationCSV) | These downloads include [constrained](https://chromium.googlesource.com/chromium/src/+/main/net/cert/root_store.proto#13) certificates. |
 
 #### Microsoft
 
@@ -113,17 +113,17 @@ The Chrome Root Store launched in 2022 and is optimized _specifically_ for publi
 
 | PKI Use Case                   | Downloads         | Note       |
 | ------------------------------ | ----------------- | ---------- |
-| TLS Server Authentication      | [CSV]() / [PEM]() |            |
-| TLS Client Authentication      | [CSV]() / [PEM]() |            |
-| S/MIME                         | [CSV]() / [PEM]() |            |
-| Timestamping                   | [CSV]() / [PEM]() |            |
-| Code Signing                   | [CSV]() / [PEM]() |            |
-| Document Signing               | [CSV]() / [PEM]() |            |
-| Encrypting File System         | [CSV]() / [PEM]() |            |
-| IP Security End System         | [CSV]() / [PEM]() |            |
-| IP Security IKE Intermediate   | [CSV]() / [PEM]() |            |
-| IP Security Tunnel Termination | [CSV]() / [PEM]() |            |
-| IP Security User               | [CSV]() / [PEM]() |            |
+| TLS Server Authentication      | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftTLSServerAuthenticationCSV) |            |
+| TLS Client Authentication      | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftTLSClientAuthenticationCSV) |            |
+| S/MIME                         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftSMIMECSV) |            |
+| Timestamping                   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftTimestampingCSV) |            |
+| Code Signing                   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftCodeSigningCSV) |            |
+| Document Signing               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftDocumentSigningCSV) |            |
+| Encrypting File System         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftEncryptingFileSystemCSV) |            |
+| IP Security End System         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityEndSystemCSV) |            |
+| IP Security IKE Intermediate   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityIKEIntermediateCSV) |            |
+| IP Security Tunnel Termination | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityTunnelTerminationCSV) |            |
+| IP Security User               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MicrosoftIPSecurityUserCSV) |            |
 
 #### Mozilla  
 
@@ -141,8 +141,8 @@ The Chrome Root Store launched in 2022 and is optimized _specifically_ for publi
 
 | PKI Use Case              | Downloads         | Note       |
 | ------------------------- | ----------------- | ---------- |
-| TLS Server Authentication | [CSV]() / [PEM]() |            |
-| S/MIME                    | [CSV]() / [PEM]() |            |
+| TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MozillaTLSServerAuthenticationCSV) |            |
+| S/MIME                    | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=MozillaSMIMECSV) |            |
 
 ### Additional Resources ###
 - [crt.sh Certificate Search](https://crt.sh/)
