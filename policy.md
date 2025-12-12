@@ -49,7 +49,7 @@ This policy considers a "CA Owner" to be the organization or legal entity that i
 3.1 [Root CA Certificates](policy#31-root-ca-certificates) <br>
 3.2 [Subordinate CA Certificates](policy#32-subordinate-ca-certificates) <br>
 4. [Policy Disclosures](policy#4-policy-disclosures) <br>
-5. [Audit Disclosures](policy#5-policy-disclosures) <br>
+5. [Audit Disclosures](policy#5-audit-disclosures) <br>
 5.1 [Scope of certificates covered by an Audit](policy#51-scope-of-certificates-covered-by-an-audit) <br>
 5.2 [Audit Statement Content](policy#52-audit-statement-content) <br>
 5.3 [Audit Firm and Audit Team Qualifications](policy#53-audit-firm-and-audit-team-qualifications) <br>
