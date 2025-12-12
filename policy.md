@@ -251,6 +251,15 @@ For hierarchies used to issue S/MIME certificates:
 - 2.23.140.1.5.4.2
 - 2.23.140.1.5.4.3
 
+15. Effective **TBD** (todo: define an audit period start date where this becomes effective?), a disclosure of the sampling methodology, including:
+- The total population size of the period;
+- The absolute number of items sampled; and
+- A detailed description of the methodology used to determine the sample size (e.g. statistical sampling parameters).
+
+Reports uploaded to the CCADB MUST address only the CA's conformity with the stated criteria.
+- Reports MUST NOT characterize non-conformities with the applicable criteria (e.g., Baseline Requirements) as "recommendations," "observations," or "opportunities for improvement."
+- Reports SHOULD NOT include recommendations, opportunities for improvement, or advisory commentary that does not represent a non-conformity with the stated criteria.
+
 #### 5.2.1 ETSI
 
 Audits conducted by an accredited Conformity Assessment Body (CAB) MUST have their Audit Attestation Letter (AAL) uploaded to the CAB’s website. CA Owners provide the URL to the AAL on the CAB’s website, and ALV will verify those URLs against a list of approved CAB websites. ETSI AALs MUST follow the latest version of the AAL template on the ACAB'c [website](https://www.acab-c.com/downloads/).
