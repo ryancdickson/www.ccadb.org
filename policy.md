@@ -123,11 +123,18 @@ CA Owners with either (1) a certificate included in a Root Store or (2) a CA cer
     - freely publicly available for examination.
     - available in an authoritative English language version.
     - sufficiently detailed to assess the operations of the CA(s) and the compliance with the expectations set forth in this Policy, the applicable CA/Browser Forum Baseline Requirements, and any applicable Root Store Operator policies, and MUST NOT conflict with any of the requirements specified therein.
+- effective **TBD**, identify the in-scope CAs by including a table or bulleted list in Section 1.3.1 that minimally includes:
+    - The in-scope certificate's Subject Name,
+    - The in-scope certificate's SHA-256 fingerprint, and
+    - The set of PKI use cases served.
+- effective **TBD**, state adherance to this policy, and any applicable ecosystem policy the corresponding PKI hierarchy(ies) intends to comply with.
+- effective **TBD**, explicitly and clearly describe the relationship between the document and any other applicable policy documents within the hierarchy (e.g., a superior CA's CP/CPS), including the order of precedence in the event of a conflict.
 
-To promote simplicity and clarity, all CA policy documents SHOULD be:
-- focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents.
-- comprehensive and consolidated, whenever possible, such that there are not multiple sets of similar yet slightly different policy and practice statements supporting the same PKI use case.
-- available in Markdown or AsciiDoc.
+To promote simplicity and clarity, all CA policy documents SHOULD:
+- be focused on one specific PKI use case (e.g., TLS server authentication, TLS client authentication, S/MIME, Code Signing, etc.), rather than combining multiple use cases into a single document or set of documents.
+- be comprehensive and consolidated, whenever possible, such that there are not multiple sets of similar yet slightly different policy and practice statements supporting the same PKI use case.
+- be available in Markdown or AsciiDoc.
+- clearly define the scope of applicability for externally-operated subordinate CAs, specifying which provisions of the Root CA’s CP/CPS apply to the subordinate and which are superseded by the subordinate’s own CP/CPS.
 
 CA Owners MUST strictly adhere to their policy document(s) as disclosed within the CCADB (and not marked as “Superseded”). This extends to all policy documents the CA Owner publishes in relation to its CAs included in a Root Store, such as TSPS documents.
 
