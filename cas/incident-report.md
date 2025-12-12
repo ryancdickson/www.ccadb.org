@@ -34,6 +34,7 @@ Unless otherwise stated, "certificate" on this page refers to a final certificat
 [**Community participation in the reporting process**](#community-participation-in-the-reporting-process)
 - [Who can submit an Incident Report?](#who-can-submit-an-incident-report)
 - [Are there other ways to become involved in the reporting process?](#are-there-other-ways-to-become-involved-in-the-reporting-process)
+- [Can auditors participate in the reporting process?](#can-auditors-participate-in-the-reporting-process)
 - [What Bugzilla account can I use?](#what-bugzilla-account-can-i-use)
 
 [**Report lifecycle management**](#report-lifecycle-management)
@@ -157,6 +158,14 @@ Absolutely! There are many ways to participate in the incident reporting process
 Individuals representing CA Owners are especially encouraged to participate broadly in the reporting processes, extending their contributions beyond incidents involving only their own organization. Sharing insights and perspectives across organizational boundaries fosters a collaborative learning environment and strengthens the overall security posture of the Web PKI ecosystem.
 
 Please keep all comments constructive, relevant, and in line with the [CCADB Code of Conduct](https://docs.google.com/document/d/19ALqEvHtTE6OUTz2FaOXrU9gruIdvia5EDh3hXeGpZA/edit#heading=h.cumc0pgd1s7c) to ensure productive dialogue.
+
+#### Can auditors participate in the reporting process?
+
+Yes. Auditors are very much encouraged to participate in the incident reporting process.
+
+The [CCADB Policy](https://www.ccadb.org/policy) states that auditors SHOULD opine on incidents that occurred or were open during the audit period. This includes confirming that:
+1. The scope, impact, and root cause of incidents are accurately and fairly stated in the publicly-disclosed incident reports; and
+2. The corresponding actions taken by the CA Owner satisfactorily address those root causes and meaningfully reduce the likelihood of the issue’s recurrence.
 
 #### What Bugzilla account can I use?
 
