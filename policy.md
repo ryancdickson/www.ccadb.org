@@ -344,7 +344,7 @@ The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incid
 
 ### 6.2 Certificate Revocation List Disclosures
 
-For each unexpired and unrevoked CA certificate record disclosed to the CCADB and within 7 days of the corresponding CA issuing its first certificate, CA Owners MUST disclose either:
+For each unexpired and unrevoked CA certificate record disclosed to the CCADB and within 7 days of the corresponding CA issuing its first certificate OR within 4 hours of revoking its first certificate, whichever is earlier, CA Owners MUST disclose either:
 - the URL of a full and complete Certificate Revocation List (CRL); or
 - a JSON Array of Partitioned CRL URLs.
 
