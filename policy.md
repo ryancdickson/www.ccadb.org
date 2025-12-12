@@ -204,7 +204,9 @@ Cross-certificates issued before June 15, 2025 that DO NOT contain an EKU MUST a
 
 ### 5.2 Audit Statement Content
 
-An authoritative English language version of publicly available audit information MUST be uploaded to the CCADB no later than 92 calendar days from the point-in-time date or the end date of the period of time. In the event of a delay greater than 92 calendar days, the CA Owner MUST provide an explanatory letter signed by the Qualified Auditor. The CCADB warns Root Store Operators when the audit periods are not consecutive.
+An authoritative English language version of publicly available audit information MUST be uploaded to the CCADB no later than 92 calendar days from the point-in-time date or the end date of the period of time. If the audit information cannot be provided by this deadline, the CA Owner MUST instead upload an explanatory letter signed by the Qualified Auditor to Bugzilla in the ['CA Documents' component](https://bugzilla.mozilla.org/buglist.cgi?product=CA%20Program&component=CA%20Documents) no later than 92 calendar days from the point-in-time date or the end date of the period of time.
+
+The CCADB warns Root Store Operators when the audit periods are not consecutive.
 
 Reports uploaded to the CCADB MUST be publicly available and contain at least the following clearly-labeled text-searchable information: 
 
