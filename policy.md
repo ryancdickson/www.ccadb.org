@@ -1,6 +1,6 @@
 # CCADB Policy
 
-*Version 2.0, Effective: July 15, 2025*
+*Version 2.1, Effective: TBD*
 
 ## Introduction
 
@@ -14,7 +14,8 @@ Root Store Operators MAY have additional CCADB-related requirements defined in t
 
 |Version|Effective Date|
 |-|-|
-|2.0 (current)|July 15, 2025|
+|2.1 (current)|TBD|
+|[2.0](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_2_0.md)|July 15, 2025|
 |[1.3.1](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3_1.md)|October 29, 2024|
 |[1.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_3.md)|October 25, 2023|
 |[1.2.3](https://github.com/mozilla/www.ccadb.org/blob/master/policy_archive/version_1_2_3.md)|July 19, 2023|
@@ -219,7 +220,7 @@ Reports uploaded to the CCADB MUST be publicly available and contain at least th
 11. Date the audit statement was issued (referred to as the "issuing date" by the ACAB'c Audit Attestation Letter templates and "report date" by the WebTrust Illustrative Reports);
     - For revised or corrected versions of audit statements made to address errors, omissions, or formatting to a previously completed audit statement, the CA Owner may enter the date of the initial issuance, provided that the scope and audit period covered by the revised audit statement remain unchanged. In such cases, the audit statement should contain the initial issuance date and the subsequent issuance date and the CA Owner should provide the URL of the most recent version and include a comment in the case explaining the revision date and the reason for reissuance of the audit statement.
 12. For ETSI, a statement to indicate if the audit was a full audit, and which parts of the criteria were applied, e.g. DVCP, OVCP, NCP, NCP+, LCP, EVCP, EVCP+, QCP-w, Part1 (General Requirements), and/or Part 2 (Requirements for trust service providers), and a statement to indicate that the auditor referenced the applicable CA/Browser Forum criteria and the version used;
-13. All incidents disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Root Store Operator; and
+13. All [incidents](#61-disclosing-and-responding-to-incidents) disclosed by the CA Owner, or reported by a third party, and all findings reported by an auditor, that, at any time during the audit period, occurred, were open in Bugzilla, or were reported to a Root Store Operator. For each, auditors SHOULD opine that (a) the scope, impact, and root cause of incidents are accurately and fairly stated in the publicly-disclosed incident reports, and (b) that the corresponding actions taken by the CA Owner satisfactorily address those root causes and meaningfully reduce likelihood of the issue’s recurrence; and
 14. An explicit statement indicating the audit covers the relevant systems and processes used in the issuance of all certificates that assert one or more of the policy identifiers listed below:
 
 For hierarchies used to issue TLS certificates:
