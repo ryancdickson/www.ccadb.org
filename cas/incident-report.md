@@ -81,12 +81,15 @@ For publicly-trusted CA Owners, the number of incident reports filed in Bugzilla
 
 Qualifications, non-conformities, and other deviations or omissions identified during audits are considered "findings."
 
-These items are commonly, but not exclusively, presented as either:
-- major non-conformities,
-- minor non-conformities,
+The WebTrust Audit scheme commonly, but not exclusively, presents these as:
 - qualifications,
 - qualified opinions, or
-- other matters.
+- other matters
+
+The ETSI Audit scheme commonly, but not exclusively, presents these as:
+- non-conformities (e.g., major, minor, etc.)
+  
+As described later in these guidelines, an audit finding MUST be subject of an incident report.
 
 #### Why is public reporting important?
 
