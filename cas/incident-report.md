@@ -241,7 +241,7 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 CA Owners SHOULD respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
 Unless a [Closure Report](#closure-report) has been posted and no further questions have been raised, open incident reports MUST be updated:
-- on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners MAY request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
+- on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners SHOULD request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
 - within 7 days, if a "Next update" date is not recorded; or
 - within 3 days of an Action Item being changed, completed, or delayed.
 
@@ -459,6 +459,8 @@ For incidents affecting less than 10,000 certificates, a CA Owner MUST attach a 
 | **Is revoked?** | "Yes", "Planned","Delayed", or "N/A" (for expired) |
 | **Revocation date** | Actual Date, Planned Date, or "N/A" |
 | **Revocation reason** | The reasonCode corresponding with the certificate's entry on the CRL. |
+
+CA Owners MAY append additional fields to this list to provide further context or data relevant to the incident. However, to ensure automated parsing tools function correctly, the standard fields defined above MUST appear first and in the order listed. Any additional, custom fields MUST be appended as new columns to the right of the "Revocation reason" field.
 
 For incidents affecting 10,000 or more certificates, a CA Owner MAY instead attach a text file where each line is of the form https://crt.sh/?sha256=[sha256 fingerprint of the certificate].
 
