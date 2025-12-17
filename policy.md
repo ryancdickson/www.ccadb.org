@@ -182,6 +182,7 @@ URLs for the following audit statements are required for each CA certificate, de
 | Server Authentication  | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br> (1) either 1.3.6.1.5.5.7.3.1 (id-kp-serverAuth) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) TLS BR Audit <br><br> (4) TLS EVG Audit (_only if issuing certificates that contain the CA/Browser Forum EV Certificate Policy Identifier (2.23.140.1.1)_) |
 | Client Authentication | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br> (1) either 1.3.6.1.5.5.7.3.2 (id-kp-clientAuth) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU  | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) TLS BR Audit <br><br> (4) TLS EVG Audit (_only if issuing certificates that contain the CA/Browser Forum EV Certificate Policy Identifier (2.23.140.1.1)_) |
 | Code Signing           | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br>(1) either 1.3.6.1.5.5.7.3.3 (id-kp-codeSigning) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU    | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) Code Signing Audit   |
+| Time Stamping          | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br>(1) either 1.3.6.1.5.5.7.3.8 (id-kp-timeStamping) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU    | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) Code Signing Audit   |
 | Secure Email           | Any certificate issued by the CA (directly or transitively) contains an EKU value of: <br><br>(1) either 1.3.6.1.5.5.7.3.4 (id-kp-emailProtection) or 1.3.6.1.5.5.7.3.0 (anyExtendedKeyUsage), or <br><br> (2) No EKU   | (1) Standard Audit <br><br> (2) NetSec Audit <br><br> (3) S/MIME BR Audit  |
 
 Some Root Store Operators require additional audit disclosures to the CCADB.
@@ -239,7 +240,7 @@ For hierarchies used to issue TLS certificates:
 - 2.23.140.1.2.3
 - 2.23.140.1.1
 
-For hierarchies used to issue Code Signing certificates:
+For hierarchies used to issue Code Signing and/pr Time Stamping certificates:
 - 2.23.140.1.4.1
 - 2.23.140.1.4.2
 - 2.23.140.1.3
@@ -377,6 +378,8 @@ Beginning June 15, 2025, when new cross-certificates are issued across PKI hiera
 | S/MIME                    | MUST | Only 1.3.6.1.5.5.7.3.4                       |
 | S/MIME (generic)          | MUST | Only 1.3.6.1.5.5.7.3.4 and 1.3.6.1.5.5.7.3.2 |
 | Code signing              | MUST | Only 1.3.6.1.5.5.7.3.3                       |
+| Time stamping             | MUST | Only 1.3.6.1.5.5.7.3.8                       |
+
 
 In cases where both the Issuer and the Subject hierarchies are capable of issuing Extended Validation (EV) certificates, the cross-certificate MUST include the EV CA/Browser Forum Reserved Certificate Policy Identifier of 2.23.140.1.1 as a policyIdentifier. Additional policyIdentifiers MAY be present.
 
