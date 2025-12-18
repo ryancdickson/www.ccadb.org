@@ -244,7 +244,7 @@ While Full Incident Reports SHOULD be posted as soon as possible, they MUST be p
 CA Owners SHOULD respond promptly to comments and questions, and MUST respond within 7 days, even if only to acknowledge the request and provide a timeline for a full response.
 
 Unless a [Closure Report](#closure-report) has been posted and no further questions have been raised, open incident reports MUST be updated:
-- on or before the "Next update" date in the "Whiteboard" field of the bug (note: CA Owners SHOULD request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item.);
+- on or before the "Next update" date in the "Whiteboard" field of the bug and CA Owners SHOULD request the "Next update" Whiteboard field be set by a Root Store Operator to align with a specific date related to an open Action Item;
 - within 7 days, if a "Next update" date is not recorded; or
 - within 3 days of an Action Item being changed, completed, or delayed.
 
