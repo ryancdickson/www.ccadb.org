@@ -87,7 +87,7 @@ The WebTrust Audit scheme commonly, but not exclusively, presents these as:
 - other matters
 
 The ETSI Audit scheme commonly, but not exclusively, presents these as:
-- non-conformities (e.g., major, minor, etc.)
+- non-conformities (sometimes prefaced by "major" or "minor")
   
 As described later in these guidelines, an audit finding MUST be subject of an incident report.
 
