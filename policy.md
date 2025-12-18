@@ -240,7 +240,7 @@ For hierarchies used to issue TLS certificates:
 - 2.23.140.1.2.3
 - 2.23.140.1.1
 
-For hierarchies used to issue Code Signing and/pr Time Stamping certificates:
+For hierarchies used to issue Code Signing and/or Time Stamping certificates:
 - 2.23.140.1.4.1
 - 2.23.140.1.4.2
 - 2.23.140.1.3
