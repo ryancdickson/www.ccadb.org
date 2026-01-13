@@ -345,7 +345,7 @@ The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incid
 
 ### 6.2 Certificate Revocation List Disclosures
 
-For any time-valid CA certificate disclosed to the CCADB, CA Owners MUST disclose the complete set of distinct HTTP URLs appearing in the `crlDistributionPoints` extension of the time-valid certificates issued by that CA. The disclosed URLs MUST match exactly as they appear in the issued certificates.
+For any unexpired and unrevoked CA certificate disclosed to the CCADB, CA Owners MUST disclose the complete set of distinct HTTP URLs appearing in the `crlDistributionPoints` extension of the unexpired certificates issued by that CA. The disclosed URLs MUST match exactly as they appear in the issued certificates.
 
 CA Owners MUST disclose these URLs to the CCADB at the earlier of:
 - within 7 days of the corresponding CA issuing the first certificate containing the URL; OR
@@ -354,6 +354,8 @@ CA Owners MUST disclose these URLs to the CCADB at the earlier of:
 If the CA has not yet issued any certificates (i.e., no CRL URLs are established), the CA Owner MUST enter `[""]` into the "JSON Array of Partitioned CRLs" field until issuance begins.
 
 If the CA certificate is expired and there are no longer unexpired leaf certificates validating to it, the CA Owner MUST enter the string `expired` into the "All Full CRL URIs for This Hierarchy" field.
+
+If the CA certificate is revoked, no `crlDistributionPoints` disclosures are required.
 
 If populating a full and complete CRL URL: 
 - values MUST be stored in the "All Full CRL URIs for This Hierarchy" field as a properly formatted JSON array.
