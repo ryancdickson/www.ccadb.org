@@ -363,7 +363,7 @@ If populating a full and complete CRL URL:
 
 If populating a JSON Array of Partitioned CRL URLs: 
 - values MUST be stored in the "JSON Array of Partitioned CRLs" field as a properly formatted JSON array.
-- CA Owners MUST ensure that each corresponding CRL contains a critical `IssuingDistributionPoint` extension and the `distributionPoint` field of the extension MUST include a 'UniformResourceIdentifier'. The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the CA certificate.
+- CA Owners MUST ensure that each corresponding CRL contains a critical `IssuingDistributionPoint` extension and the `distributionPoint` field of the extension MUST include a `UniformResourceIdentifier`. The value of the `UniformResourceIdentifier` MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the CA certificate.
 
 Under normal operating conditions, the CRL URLs provided by CAs in accordance with this section MUST be available such that relying parties are able to successfully retrieve the current CRL every 4 hours.
 
