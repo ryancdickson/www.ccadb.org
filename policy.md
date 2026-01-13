@@ -355,7 +355,7 @@ If the CA has not yet issued any certificates (i.e., no CRL URLs are established
 
 If the CA certificate is expired and there are no longer unexpired leaf certificates validating to it, the CA Owner MUST enter the string `expired` into the "All Full CRL URIs for This Hierarchy" field.
 
-If the CA certificate is revoked, no `crlDistributionPoints` disclosures are required.
+If the CA certificate is revoked, no `crlDistributionPoints` disclosures are required on that certificate record.
 
 If populating a full and complete CRL URL: 
 - values MUST be stored in the "All Full CRL URIs for This Hierarchy" field as a properly formatted JSON array.
