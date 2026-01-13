@@ -345,20 +345,23 @@ The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incid
 
 ### 6.2 Certificate Revocation List Disclosures
 
-For each unexpired and unrevoked CA certificate record disclosed to the CCADB and within 7 days of the corresponding CA issuing its first certificate OR within 4 hours of revoking its first certificate, whichever is earlier, CA Owners MUST disclose either:
-- the URL of a full and complete Certificate Revocation List (CRL); or
-- a JSON Array of Partitioned CRL URLs.
+For any time-valid CA certificate disclosed to the CCADB, CA Owners MUST disclose the complete set of distinct HTTP URLs appearing in the `crlDistributionPoints` extension of the time-valid certificates issued by that CA. The disclosed URLs MUST match exactly as they appear in the issued certificates.
 
-URLs:
-- MUST match exactly as they appear in the certificates issued by the corresponding CA.
+CA Owners MUST disclose these URLs to the CCADB at the earlier of:
+- within 7 days of the corresponding CA issuing the first certificate containing the URL; OR
+- within 4 hours of the corresponding CA revoking the first certificate containing the URL.
+
+If the CA has not yet issued any certificates (i.e., no CRL URLs are established), the CA Owner MUST enter `[""]` into the "JSON Array of Partitioned CRLs" field until issuance begins.
+
+If the CA certificate is expired and there are no longer unexpired leaf certificates validating to it, the CA Owner MUST enter the string `expired` into the "All Full CRL URIs for This Hierarchy" field.
 
 If populating a full and complete CRL URL: 
-- the corresponding CRL SHOULD NOT contain an 'Issuing Distribution Point' extension.
-- the JSON Array of Partitioned CRL URLs field MUST be empty.
+- values MUST be stored in the "All Full CRL URIs for This Hierarchy" field as a properly formatted JSON array.
+- the corresponding CRL SHOULD NOT contain an `IssuingDistributionPoint` extension.
 
 If populating a JSON Array of Partitioned CRL URLs: 
-- CA Owners MUST ensure that each corresponding CRL contains a critical 'Issuing Distribution Point' extension and the 'distributionPoint' field of the extension MUST include a 'UniformResourceIdentifier'. The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the CA certificate.
-- the full and complete CRL URL MUST be empty.
+- values MUST be stored in the "JSON Array of Partitioned CRLs" field as a properly formatted JSON array.
+- CA Owners MUST ensure that each corresponding CRL contains a critical `IssuingDistributionPoint` extension and the `distributionPoint` field of the extension MUST include a 'UniformResourceIdentifier'. The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the CA certificate.
 
 Under normal operating conditions, the CRL URLs provided by CAs in accordance with this section MUST be available such that relying parties are able to successfully retrieve the current CRL every 4 hours.
 
