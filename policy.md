@@ -124,7 +124,7 @@ CA Owners with either (1) a certificate included in a Root Store or (2) a CA cer
     - available in an authoritative English language version.
     - sufficiently detailed to assess the operations of the CA(s) and the compliance with the expectations set forth in this Policy, the applicable CA/Browser Forum Baseline Requirements, and any applicable Root Store Operator policies, and MUST NOT conflict with any of the requirements specified therein.
 
-Effective **TBD**, CA policy documents MUST:
+Effective September 15, 2026, CA policy documents MUST:
 - identify the in-scope CAs by including a table or bulleted list in Section 1.3.1 that minimally includes the:
     - in-scope certificate's Subject Name,
     - in-scope certificate's SHA-256 fingerprint, and
@@ -261,10 +261,10 @@ For hierarchies used to issue S/MIME certificates:
 - 2.23.140.1.5.4.2
 - 2.23.140.1.5.4.3
 
-15. Effective **TBD** (todo: define an audit period start date where this becomes effective?), a disclosure of the sampling methodology, including:
-- The total population size of the period;
+15. For any audit period beginning on or after January 15, 2027, a disclosure of the sampling methodology used by the auditor, including:
+- The total population size(s) of the period;
 - The absolute number of items sampled; and
-- A detailed description of the methodology used to determine the sample size (e.g. statistical sampling parameters).
+- A detailed description of the methodology used to determine the sample size(s) (e.g., statistical sampling parameters).
 
 Reports uploaded to the CCADB MUST address only the CA's conformity with the stated criteria.
 - Reports MUST NOT characterize non-conformities with the applicable criteria (e.g., Baseline Requirements) as "recommendations," "observations," or "opportunities for improvement."
