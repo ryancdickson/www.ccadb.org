@@ -125,10 +125,6 @@ CA Owners with either (1) a certificate included in a Root Store or (2) a CA cer
     - sufficiently detailed to assess the operations of the CA(s) and the compliance with the expectations set forth in this Policy, the applicable CA/Browser Forum Baseline Requirements, and any applicable Root Store Operator policies, and MUST NOT conflict with any of the requirements specified therein.
 
 Effective September 15, 2026, CA policy documents MUST:
-- identify the in-scope CAs by including a table or bulleted list in Section 1.3.1 that minimally includes the:
-    - in-scope certificate's Subject Name,
-    - in-scope certificate's SHA-256 fingerprint, and
-    - set of PKI use cases served.
 - state adherence to this policy, and any applicable ecosystem policy the corresponding PKI hierarchy(ies) intends to comply with.
 - explicitly and clearly describe the relationship between the document and any other applicable policy documents within the hierarchy (e.g., a superior CA's CP/CPS), including the order of precedence in the event of a conflict.
 
