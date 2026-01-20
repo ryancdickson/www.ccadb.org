@@ -351,12 +351,12 @@ CA Owners MUST disclose these URLs to the CCADB at the earlier of:
 
 If the CA has not yet issued any certificates (i.e., no CRL URLs are established), the CA Owner MUST enter `[""]` into the "JSON Array of Partitioned CRLs" field until issuance begins.
 
-If the CA certificate is expired and there are no longer unexpired leaf certificates validating to it, the CA Owner MUST enter the string `expired` into the "All Full CRL URIs for This Hierarchy" field.
+If the CA certificate is expired and there are no longer unexpired leaf certificates validating to it, the CA Owner MUST enter the string `expired` into the "JSON Array of all Full CRL URIs" field.
 
 If the CA certificate is revoked, no `crlDistributionPoints` disclosures are required on that certificate record.
 
 If populating a full and complete CRL URL: 
-- values MUST be stored in the "All Full CRL URIs for This Hierarchy" field as a properly formatted JSON array.
+- values MUST be stored in the "JSON Array of all Full CRL URIs" field as a properly formatted JSON array.
 - the corresponding CRL SHOULD NOT contain an `IssuingDistributionPoint` extension.
 
 If populating a JSON Array of Partitioned CRL URLs: 
