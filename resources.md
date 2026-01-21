@@ -100,7 +100,7 @@ The Chrome Root Store launched in 2022 and is optimized _specifically_ for publi
 
 | PKI Use Case              | Downloads         | Note       |
 | ------------------------- | ----------------- | ---------- |
-| TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=ChromeTLSServerAuthenticationCSV) | These downloads include [constrained](https://chromium.googlesource.com/chromium/src/+/main/net/cert/root_store.proto#13) certificates. |
+| TLS Server Authentication | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=ChromeTLSServerAuthenticationCSV) | This download includes certificates that are [constrained](https://chromium.googlesource.com/chromium/src/+/main/net/cert/root_store.proto#13) for various reasons. |
 
 #### Microsoft
 
