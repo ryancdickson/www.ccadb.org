@@ -13,21 +13,21 @@ The [CCADB Data Usage Terms](rootstores/usage#ccadb-data-usage-terms) applies to
 
 #### Use-case Specific Reports
 
-The following reports contain any root Certification Authority (CA) certificate trusted for the given PKI use case by at least one CCADB Root Store Operator. 
+The following reports contain any root Certification Authority (CA) certificate trusted for the given PKI use case by at least one CCADB Root Store Operator. The `Trust Bits for Root Cert` field is auto updated from a CCADB trigger that uses the collection of trust bits from all root stores. All "Apple Constrained", "Google Chrome Constrained", "Microsoft Constrained", "Mozilla Constrained" values will be boolean depending on if any constraint information exists for that root program on that root certificate.
 
 | PKI Use Case                   | Downloads         | Note       |
 | ------------------------------ | ----------------- | ---------- |
-| TLS Server Authentication      | [CSV]() |            |
-| TLS Client Authentication      | [CSV]() |            |
-| S/MIME                         | [CSV]() |            |
-| Timestamping                   | [CSV]() |            |
-| Code Signing                   | [CSV]() |            |
-| Document Signing               | [CSV]() |            |
-| Encrypting File System         | [CSV]() |            |
-| IP Security End System         | [CSV]() |            |
-| IP Security IKE Intermediate   | [CSV]() |            |
-| IP Security Tunnel Termination | [CSV]() |            |
-| IP Security User               | [CSV]() |            |
+| TLS Server Authentication      | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=TLSServerAuthenticationCSV) | Trust Bits for Root Cert INCLUDES Server Authentication AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| TLS Client Authentication      | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=TLSClientAuthenticationCSV) | Trust Bits for Root Cert INCLUDES Client Authentication AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| S/MIME                         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=SMIMECSV) | Trust Bits for Root Cert INCLUDES Secure Email AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| Timestamping                   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=TimestampingCSV) | Trust Bits for Root Cert INCLUDES Time Stamping AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| Code Signing                   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=CodeSigningCSV) | Trust Bits for Root Cert INCLUDES Code Signing AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| Document Signing               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=DocumentSigningCSV) | Trust Bits for Root Cert INCLUDES Document Signing AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| Encrypting File System         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=EncryptingFileSystemCSV) | Trust Bits for Root Cert INCLUDES Encrypting File System AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| IP Security End System         | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityEndSystemCSV) | Trust Bits for Root Cert INCLUDES IP Security End System AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| IP Security IKE Intermediate   | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityIKEIntermediateCSV) | Trust Bits for Root Cert INCLUDES IP Security IKE Intermediate AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| IP Security Tunnel Termination | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityTunnelTerminationCSV) | Trust Bits for Root Cert INCLUDES IP Security Tunnel Termination AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
+| IP Security User               | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/Report?Name=IPSecurityUserCSV) | Trust Bits for Root Cert INCLUDES IP Security User AND ((Apple Status != Not Included OR Removed) OR (Google Chrome Status != Not Included OR Removed) OR (Microsoft Status != Not Included OR Pending OR Removed) OR (Mozilla Status != Not Yet Included OR Removed OR Obsolete)) |
 
 #### Additional Reports
 
