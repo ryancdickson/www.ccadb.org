@@ -343,7 +343,7 @@ The CCADB [Incident Reporting Guidelines (IRGs)](https://www.ccadb.org/cas/incid
 
 ### 6.2 Certificate Revocation List Disclosures
 
-For any unexpired and unrevoked CA certificate disclosed to the CCADB, CA Owners MUST disclose the complete set of distinct HTTP URLs appearing in the `crlDistributionPoints` extension of the unexpired certificates issued by that CA. The disclosed URLs MUST match exactly as they appear in the issued certificates.
+For any unexpired and unrevoked CA certificate disclosed to the CCADB, CA Owners MUST disclose, in a JSON array, the complete set of distinct HTTP URLs appearing in the `crlDistributionPoints` extension of the unexpired certificates issued by that CA. The disclosed URLs MUST match exactly as they appear in the issued certificates.
 
 CA Owners MUST disclose these URLs to the CCADB at the earlier of:
 - within 7 days of the corresponding CA issuing the first certificate containing the URL; OR
