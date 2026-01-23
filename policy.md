@@ -1,6 +1,6 @@
 # CCADB Policy
 
-*Version 2.1, Effective: TBD*
+*Version 2.1, Effective: June 15, 2026*
 
 ## Introduction
 
