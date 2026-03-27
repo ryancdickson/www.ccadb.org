@@ -33,7 +33,6 @@ The following reports contain any root Certification Authority (CA) certificate 
 
 | Description                    | Downloads         | Note       |
 | ------------------------------ | ----------------- | ---------- |
-| V2 All Certificate Information (root and intermediate) in the CCADB | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv2) | **Obsolete**. This download will be removed on approximately September 1, 2026. |
 | V3 All Certificate Information (root and intermediate) in the CCADB | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv3) | **Obsolete**. This download will be removed on approximately September 1, 2026. |
 | V4 All Certificate Information (root and intermediate) in the CCADB | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv4) | [Description](https://docs.google.com/document/d/1S3u0-_YACA7m-3LPpjE-t4WCh2cww_SQFh2C9DJeXHA/edit?usp=sharing) of report fields. |
 | All Included Root Certificate Trust Bit Settings | [CSV](https://ccadb.my.salesforce-sites.com/ccadb/AllIncludedRootCertsCSV) | |
