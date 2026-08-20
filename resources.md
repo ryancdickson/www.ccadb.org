@@ -48,9 +48,7 @@ In most cases, it's far more appropriate and secure to curate a purpose-built ro
 
 - See the [bundles](https://www.cisco.com/security/pki/trs/readme.html) offered by Cisco.
 
-#### Google Chrome 
-
-The Chrome Root Store launched in 2022 and is optimized _specifically_ for public TLS server authentication in the Chrome web browser when establishing secure connections to websites. Its design and the Certification Authorities included are curated to meet these particular user needs, risk profiles, and security objectives. The canonical source of truth for the Chrome Root Store is [found](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/) in the Chromium source code, and is later replicated to the CCADB. 
+#### Google Chrome
 
 **Policy:** [Chrome Root Program Policy](https://g.co/chrome/root-policy)
 
